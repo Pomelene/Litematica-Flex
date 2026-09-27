@@ -1,0 +1,4315 @@
+{
+  "version": 1,
+  "minecraft": "26.3",
+  "groups": [
+    {
+      "id": "color.wool",
+      "title": "羊毛",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_wool",
+        "minecraft:blue_wool",
+        "minecraft:brown_wool",
+        "minecraft:cyan_wool",
+        "minecraft:gray_wool",
+        "minecraft:green_wool",
+        "minecraft:light_blue_wool",
+        "minecraft:light_gray_wool",
+        "minecraft:lime_wool",
+        "minecraft:magenta_wool",
+        "minecraft:orange_wool",
+        "minecraft:pink_wool",
+        "minecraft:purple_wool",
+        "minecraft:red_wool",
+        "minecraft:white_wool",
+        "minecraft:yellow_wool"
+      ]
+    },
+    {
+      "id": "color.wool_stairs",
+      "title": "羊毛楼梯",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_wool_stairs",
+        "minecraft:blue_wool_stairs",
+        "minecraft:brown_wool_stairs",
+        "minecraft:cyan_wool_stairs",
+        "minecraft:gray_wool_stairs",
+        "minecraft:green_wool_stairs",
+        "minecraft:light_blue_wool_stairs",
+        "minecraft:light_gray_wool_stairs",
+        "minecraft:lime_wool_stairs",
+        "minecraft:magenta_wool_stairs",
+        "minecraft:orange_wool_stairs",
+        "minecraft:pink_wool_stairs",
+        "minecraft:purple_wool_stairs",
+        "minecraft:red_wool_stairs",
+        "minecraft:white_wool_stairs",
+        "minecraft:yellow_wool_stairs"
+      ]
+    },
+    {
+      "id": "color.wool_slab",
+      "title": "羊毛半砖",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_wool_slab",
+        "minecraft:blue_wool_slab",
+        "minecraft:brown_wool_slab",
+        "minecraft:cyan_wool_slab",
+        "minecraft:gray_wool_slab",
+        "minecraft:green_wool_slab",
+        "minecraft:light_blue_wool_slab",
+        "minecraft:light_gray_wool_slab",
+        "minecraft:lime_wool_slab",
+        "minecraft:magenta_wool_slab",
+        "minecraft:orange_wool_slab",
+        "minecraft:pink_wool_slab",
+        "minecraft:purple_wool_slab",
+        "minecraft:red_wool_slab",
+        "minecraft:white_wool_slab",
+        "minecraft:yellow_wool_slab"
+      ]
+    },
+    {
+      "id": "color.concrete",
+      "title": "混凝土",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_concrete",
+        "minecraft:blue_concrete",
+        "minecraft:brown_concrete",
+        "minecraft:cyan_concrete",
+        "minecraft:gray_concrete",
+        "minecraft:green_concrete",
+        "minecraft:light_blue_concrete",
+        "minecraft:light_gray_concrete",
+        "minecraft:lime_concrete",
+        "minecraft:magenta_concrete",
+        "minecraft:orange_concrete",
+        "minecraft:pink_concrete",
+        "minecraft:purple_concrete",
+        "minecraft:red_concrete",
+        "minecraft:white_concrete",
+        "minecraft:yellow_concrete"
+      ]
+    },
+    {
+      "id": "color.concrete_stairs",
+      "title": "混凝土楼梯",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_concrete_stairs",
+        "minecraft:blue_concrete_stairs",
+        "minecraft:brown_concrete_stairs",
+        "minecraft:cyan_concrete_stairs",
+        "minecraft:gray_concrete_stairs",
+        "minecraft:green_concrete_stairs",
+        "minecraft:light_blue_concrete_stairs",
+        "minecraft:light_gray_concrete_stairs",
+        "minecraft:lime_concrete_stairs",
+        "minecraft:magenta_concrete_stairs",
+        "minecraft:orange_concrete_stairs",
+        "minecraft:pink_concrete_stairs",
+        "minecraft:purple_concrete_stairs",
+        "minecraft:red_concrete_stairs",
+        "minecraft:white_concrete_stairs",
+        "minecraft:yellow_concrete_stairs"
+      ]
+    },
+    {
+      "id": "color.concrete_slab",
+      "title": "混凝土半砖",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_concrete_slab",
+        "minecraft:blue_concrete_slab",
+        "minecraft:brown_concrete_slab",
+        "minecraft:cyan_concrete_slab",
+        "minecraft:gray_concrete_slab",
+        "minecraft:green_concrete_slab",
+        "minecraft:light_blue_concrete_slab",
+        "minecraft:light_gray_concrete_slab",
+        "minecraft:lime_concrete_slab",
+        "minecraft:magenta_concrete_slab",
+        "minecraft:orange_concrete_slab",
+        "minecraft:pink_concrete_slab",
+        "minecraft:purple_concrete_slab",
+        "minecraft:red_concrete_slab",
+        "minecraft:white_concrete_slab",
+        "minecraft:yellow_concrete_slab"
+      ]
+    },
+    {
+      "id": "color.carpet",
+      "title": "地毯",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_carpet",
+        "minecraft:blue_carpet",
+        "minecraft:brown_carpet",
+        "minecraft:cyan_carpet",
+        "minecraft:gray_carpet",
+        "minecraft:green_carpet",
+        "minecraft:light_blue_carpet",
+        "minecraft:light_gray_carpet",
+        "minecraft:lime_carpet",
+        "minecraft:magenta_carpet",
+        "minecraft:orange_carpet",
+        "minecraft:pink_carpet",
+        "minecraft:purple_carpet",
+        "minecraft:red_carpet",
+        "minecraft:white_carpet",
+        "minecraft:yellow_carpet"
+      ]
+    },
+    {
+      "id": "color.concrete_powder",
+      "title": "混凝土粉末",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_concrete_powder",
+        "minecraft:blue_concrete_powder",
+        "minecraft:brown_concrete_powder",
+        "minecraft:cyan_concrete_powder",
+        "minecraft:gray_concrete_powder",
+        "minecraft:green_concrete_powder",
+        "minecraft:light_blue_concrete_powder",
+        "minecraft:light_gray_concrete_powder",
+        "minecraft:lime_concrete_powder",
+        "minecraft:magenta_concrete_powder",
+        "minecraft:orange_concrete_powder",
+        "minecraft:pink_concrete_powder",
+        "minecraft:purple_concrete_powder",
+        "minecraft:red_concrete_powder",
+        "minecraft:white_concrete_powder",
+        "minecraft:yellow_concrete_powder"
+      ]
+    },
+    {
+      "id": "color.terracotta",
+      "title": "陶瓦（含未染色）",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_terracotta",
+        "minecraft:blue_terracotta",
+        "minecraft:brown_terracotta",
+        "minecraft:cyan_terracotta",
+        "minecraft:gray_terracotta",
+        "minecraft:green_terracotta",
+        "minecraft:light_blue_terracotta",
+        "minecraft:light_gray_terracotta",
+        "minecraft:lime_terracotta",
+        "minecraft:magenta_terracotta",
+        "minecraft:orange_terracotta",
+        "minecraft:pink_terracotta",
+        "minecraft:purple_terracotta",
+        "minecraft:red_terracotta",
+        "minecraft:terracotta",
+        "minecraft:white_terracotta",
+        "minecraft:yellow_terracotta"
+      ]
+    },
+    {
+      "id": "color.glazed_terracotta",
+      "title": "带釉陶瓦",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_glazed_terracotta",
+        "minecraft:blue_glazed_terracotta",
+        "minecraft:brown_glazed_terracotta",
+        "minecraft:cyan_glazed_terracotta",
+        "minecraft:gray_glazed_terracotta",
+        "minecraft:green_glazed_terracotta",
+        "minecraft:light_blue_glazed_terracotta",
+        "minecraft:light_gray_glazed_terracotta",
+        "minecraft:lime_glazed_terracotta",
+        "minecraft:magenta_glazed_terracotta",
+        "minecraft:orange_glazed_terracotta",
+        "minecraft:pink_glazed_terracotta",
+        "minecraft:purple_glazed_terracotta",
+        "minecraft:red_glazed_terracotta",
+        "minecraft:white_glazed_terracotta",
+        "minecraft:yellow_glazed_terracotta"
+      ]
+    },
+    {
+      "id": "color.stained_glass",
+      "title": "玻璃（含普通玻璃）",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_stained_glass",
+        "minecraft:blue_stained_glass",
+        "minecraft:brown_stained_glass",
+        "minecraft:cyan_stained_glass",
+        "minecraft:glass",
+        "minecraft:gray_stained_glass",
+        "minecraft:green_stained_glass",
+        "minecraft:light_blue_stained_glass",
+        "minecraft:light_gray_stained_glass",
+        "minecraft:lime_stained_glass",
+        "minecraft:magenta_stained_glass",
+        "minecraft:orange_stained_glass",
+        "minecraft:pink_stained_glass",
+        "minecraft:purple_stained_glass",
+        "minecraft:red_stained_glass",
+        "minecraft:white_stained_glass",
+        "minecraft:yellow_stained_glass"
+      ]
+    },
+    {
+      "id": "color.stained_glass_pane",
+      "title": "玻璃板（含普通玻璃板）",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_stained_glass_pane",
+        "minecraft:blue_stained_glass_pane",
+        "minecraft:brown_stained_glass_pane",
+        "minecraft:cyan_stained_glass_pane",
+        "minecraft:glass_pane",
+        "minecraft:gray_stained_glass_pane",
+        "minecraft:green_stained_glass_pane",
+        "minecraft:light_blue_stained_glass_pane",
+        "minecraft:light_gray_stained_glass_pane",
+        "minecraft:lime_stained_glass_pane",
+        "minecraft:magenta_stained_glass_pane",
+        "minecraft:orange_stained_glass_pane",
+        "minecraft:pink_stained_glass_pane",
+        "minecraft:purple_stained_glass_pane",
+        "minecraft:red_stained_glass_pane",
+        "minecraft:white_stained_glass_pane",
+        "minecraft:yellow_stained_glass_pane"
+      ]
+    },
+    {
+      "id": "color.bed",
+      "title": "床",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_bed",
+        "minecraft:blue_bed",
+        "minecraft:brown_bed",
+        "minecraft:cyan_bed",
+        "minecraft:gray_bed",
+        "minecraft:green_bed",
+        "minecraft:light_blue_bed",
+        "minecraft:light_gray_bed",
+        "minecraft:lime_bed",
+        "minecraft:magenta_bed",
+        "minecraft:orange_bed",
+        "minecraft:pink_bed",
+        "minecraft:purple_bed",
+        "minecraft:red_bed",
+        "minecraft:white_bed",
+        "minecraft:yellow_bed"
+      ]
+    },
+    {
+      "id": "color.shulker_box",
+      "title": "潜影盒",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_shulker_box",
+        "minecraft:blue_shulker_box",
+        "minecraft:brown_shulker_box",
+        "minecraft:cyan_shulker_box",
+        "minecraft:gray_shulker_box",
+        "minecraft:green_shulker_box",
+        "minecraft:light_blue_shulker_box",
+        "minecraft:light_gray_shulker_box",
+        "minecraft:lime_shulker_box",
+        "minecraft:magenta_shulker_box",
+        "minecraft:orange_shulker_box",
+        "minecraft:pink_shulker_box",
+        "minecraft:purple_shulker_box",
+        "minecraft:red_shulker_box",
+        "minecraft:shulker_box",
+        "minecraft:white_shulker_box",
+        "minecraft:yellow_shulker_box"
+      ]
+    },
+    {
+      "id": "color.candle",
+      "title": "蜡烛",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_candle",
+        "minecraft:blue_candle",
+        "minecraft:brown_candle",
+        "minecraft:candle",
+        "minecraft:cyan_candle",
+        "minecraft:gray_candle",
+        "minecraft:green_candle",
+        "minecraft:light_blue_candle",
+        "minecraft:light_gray_candle",
+        "minecraft:lime_candle",
+        "minecraft:magenta_candle",
+        "minecraft:orange_candle",
+        "minecraft:pink_candle",
+        "minecraft:purple_candle",
+        "minecraft:red_candle",
+        "minecraft:white_candle",
+        "minecraft:yellow_candle"
+      ]
+    },
+    {
+      "id": "color.candle_cake",
+      "title": "蛋糕上的蜡烛",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_candle_cake",
+        "minecraft:blue_candle_cake",
+        "minecraft:brown_candle_cake",
+        "minecraft:candle_cake",
+        "minecraft:cyan_candle_cake",
+        "minecraft:gray_candle_cake",
+        "minecraft:green_candle_cake",
+        "minecraft:light_blue_candle_cake",
+        "minecraft:light_gray_candle_cake",
+        "minecraft:lime_candle_cake",
+        "minecraft:magenta_candle_cake",
+        "minecraft:orange_candle_cake",
+        "minecraft:pink_candle_cake",
+        "minecraft:purple_candle_cake",
+        "minecraft:red_candle_cake",
+        "minecraft:white_candle_cake",
+        "minecraft:yellow_candle_cake"
+      ]
+    },
+    {
+      "id": "color.banner",
+      "title": "立式旗帜",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_banner",
+        "minecraft:blue_banner",
+        "minecraft:brown_banner",
+        "minecraft:cyan_banner",
+        "minecraft:gray_banner",
+        "minecraft:green_banner",
+        "minecraft:light_blue_banner",
+        "minecraft:light_gray_banner",
+        "minecraft:lime_banner",
+        "minecraft:magenta_banner",
+        "minecraft:orange_banner",
+        "minecraft:pink_banner",
+        "minecraft:purple_banner",
+        "minecraft:red_banner",
+        "minecraft:white_banner",
+        "minecraft:yellow_banner"
+      ]
+    },
+    {
+      "id": "color.wall_banner",
+      "title": "墙式旗帜",
+      "category": "颜色",
+      "members": [
+        "minecraft:black_wall_banner",
+        "minecraft:blue_wall_banner",
+        "minecraft:brown_wall_banner",
+        "minecraft:cyan_wall_banner",
+        "minecraft:gray_wall_banner",
+        "minecraft:green_wall_banner",
+        "minecraft:light_blue_wall_banner",
+        "minecraft:light_gray_wall_banner",
+        "minecraft:lime_wall_banner",
+        "minecraft:magenta_wall_banner",
+        "minecraft:orange_wall_banner",
+        "minecraft:pink_wall_banner",
+        "minecraft:purple_wall_banner",
+        "minecraft:red_wall_banner",
+        "minecraft:white_wall_banner",
+        "minecraft:yellow_wall_banner"
+      ]
+    },
+    {
+      "id": "wood.planks",
+      "title": "木板",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_planks",
+        "minecraft:bamboo_mosaic",
+        "minecraft:bamboo_planks",
+        "minecraft:birch_planks",
+        "minecraft:cherry_planks",
+        "minecraft:crimson_planks",
+        "minecraft:dark_oak_planks",
+        "minecraft:jungle_planks",
+        "minecraft:mangrove_planks",
+        "minecraft:oak_planks",
+        "minecraft:pale_oak_planks",
+        "minecraft:poplar_planks",
+        "minecraft:spruce_planks",
+        "minecraft:warped_planks"
+      ]
+    },
+    {
+      "id": "wood.stairs",
+      "title": "木楼梯",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_stairs",
+        "minecraft:bamboo_mosaic_stairs",
+        "minecraft:bamboo_stairs",
+        "minecraft:birch_stairs",
+        "minecraft:cherry_stairs",
+        "minecraft:crimson_stairs",
+        "minecraft:dark_oak_stairs",
+        "minecraft:jungle_stairs",
+        "minecraft:mangrove_stairs",
+        "minecraft:oak_stairs",
+        "minecraft:pale_oak_stairs",
+        "minecraft:poplar_stairs",
+        "minecraft:spruce_stairs",
+        "minecraft:warped_stairs"
+      ]
+    },
+    {
+      "id": "wood.slab",
+      "title": "木半砖",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_slab",
+        "minecraft:bamboo_mosaic_slab",
+        "minecraft:bamboo_slab",
+        "minecraft:birch_slab",
+        "minecraft:cherry_slab",
+        "minecraft:crimson_slab",
+        "minecraft:dark_oak_slab",
+        "minecraft:jungle_slab",
+        "minecraft:mangrove_slab",
+        "minecraft:oak_slab",
+        "minecraft:pale_oak_slab",
+        "minecraft:poplar_slab",
+        "minecraft:spruce_slab",
+        "minecraft:warped_slab"
+      ]
+    },
+    {
+      "id": "wood.log",
+      "title": "原木与菌柄",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_log",
+        "minecraft:bamboo_block",
+        "minecraft:birch_log",
+        "minecraft:cherry_log",
+        "minecraft:crimson_stem",
+        "minecraft:dark_oak_log",
+        "minecraft:jungle_log",
+        "minecraft:mangrove_log",
+        "minecraft:oak_log",
+        "minecraft:pale_oak_log",
+        "minecraft:poplar_log",
+        "minecraft:spruce_log",
+        "minecraft:warped_stem"
+      ]
+    },
+    {
+      "id": "wood.wood",
+      "title": "木头与菌核",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_wood",
+        "minecraft:birch_wood",
+        "minecraft:cherry_wood",
+        "minecraft:crimson_hyphae",
+        "minecraft:dark_oak_wood",
+        "minecraft:jungle_wood",
+        "minecraft:mangrove_wood",
+        "minecraft:oak_wood",
+        "minecraft:pale_oak_wood",
+        "minecraft:poplar_wood",
+        "minecraft:spruce_wood",
+        "minecraft:warped_hyphae"
+      ]
+    },
+    {
+      "id": "wood.stripped_log",
+      "title": "去皮原木与菌柄",
+      "category": "木材",
+      "members": [
+        "minecraft:stripped_acacia_log",
+        "minecraft:stripped_bamboo_block",
+        "minecraft:stripped_birch_log",
+        "minecraft:stripped_cherry_log",
+        "minecraft:stripped_crimson_stem",
+        "minecraft:stripped_dark_oak_log",
+        "minecraft:stripped_jungle_log",
+        "minecraft:stripped_mangrove_log",
+        "minecraft:stripped_oak_log",
+        "minecraft:stripped_pale_oak_log",
+        "minecraft:stripped_poplar_log",
+        "minecraft:stripped_spruce_log",
+        "minecraft:stripped_warped_stem"
+      ]
+    },
+    {
+      "id": "wood.stripped_wood",
+      "title": "去皮木头与菌核",
+      "category": "木材",
+      "members": [
+        "minecraft:stripped_acacia_wood",
+        "minecraft:stripped_birch_wood",
+        "minecraft:stripped_cherry_wood",
+        "minecraft:stripped_crimson_hyphae",
+        "minecraft:stripped_dark_oak_wood",
+        "minecraft:stripped_jungle_wood",
+        "minecraft:stripped_mangrove_wood",
+        "minecraft:stripped_oak_wood",
+        "minecraft:stripped_pale_oak_wood",
+        "minecraft:stripped_poplar_wood",
+        "minecraft:stripped_spruce_wood",
+        "minecraft:stripped_warped_hyphae"
+      ]
+    },
+    {
+      "id": "wood.fence",
+      "title": "木栅栏",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_fence",
+        "minecraft:bamboo_fence",
+        "minecraft:birch_fence",
+        "minecraft:cherry_fence",
+        "minecraft:crimson_fence",
+        "minecraft:dark_oak_fence",
+        "minecraft:jungle_fence",
+        "minecraft:mangrove_fence",
+        "minecraft:oak_fence",
+        "minecraft:pale_oak_fence",
+        "minecraft:poplar_fence",
+        "minecraft:spruce_fence",
+        "minecraft:warped_fence"
+      ]
+    },
+    {
+      "id": "wood.fence_gate",
+      "title": "栅栏门",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_fence_gate",
+        "minecraft:bamboo_fence_gate",
+        "minecraft:birch_fence_gate",
+        "minecraft:cherry_fence_gate",
+        "minecraft:crimson_fence_gate",
+        "minecraft:dark_oak_fence_gate",
+        "minecraft:jungle_fence_gate",
+        "minecraft:mangrove_fence_gate",
+        "minecraft:oak_fence_gate",
+        "minecraft:pale_oak_fence_gate",
+        "minecraft:poplar_fence_gate",
+        "minecraft:spruce_fence_gate",
+        "minecraft:warped_fence_gate"
+      ]
+    },
+    {
+      "id": "wood.door",
+      "title": "木门",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_door",
+        "minecraft:bamboo_door",
+        "minecraft:birch_door",
+        "minecraft:cherry_door",
+        "minecraft:crimson_door",
+        "minecraft:dark_oak_door",
+        "minecraft:jungle_door",
+        "minecraft:mangrove_door",
+        "minecraft:oak_door",
+        "minecraft:pale_oak_door",
+        "minecraft:poplar_door",
+        "minecraft:spruce_door",
+        "minecraft:warped_door"
+      ]
+    },
+    {
+      "id": "wood.trapdoor",
+      "title": "木活板门",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_trapdoor",
+        "minecraft:bamboo_trapdoor",
+        "minecraft:birch_trapdoor",
+        "minecraft:cherry_trapdoor",
+        "minecraft:crimson_trapdoor",
+        "minecraft:dark_oak_trapdoor",
+        "minecraft:jungle_trapdoor",
+        "minecraft:mangrove_trapdoor",
+        "minecraft:oak_trapdoor",
+        "minecraft:pale_oak_trapdoor",
+        "minecraft:poplar_trapdoor",
+        "minecraft:spruce_trapdoor",
+        "minecraft:warped_trapdoor"
+      ]
+    },
+    {
+      "id": "wood.button",
+      "title": "木按钮",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_button",
+        "minecraft:bamboo_button",
+        "minecraft:birch_button",
+        "minecraft:cherry_button",
+        "minecraft:crimson_button",
+        "minecraft:dark_oak_button",
+        "minecraft:jungle_button",
+        "minecraft:mangrove_button",
+        "minecraft:oak_button",
+        "minecraft:pale_oak_button",
+        "minecraft:poplar_button",
+        "minecraft:spruce_button",
+        "minecraft:warped_button"
+      ]
+    },
+    {
+      "id": "wood.pressure_plate",
+      "title": "木压力板",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_pressure_plate",
+        "minecraft:bamboo_pressure_plate",
+        "minecraft:birch_pressure_plate",
+        "minecraft:cherry_pressure_plate",
+        "minecraft:crimson_pressure_plate",
+        "minecraft:dark_oak_pressure_plate",
+        "minecraft:jungle_pressure_plate",
+        "minecraft:mangrove_pressure_plate",
+        "minecraft:oak_pressure_plate",
+        "minecraft:pale_oak_pressure_plate",
+        "minecraft:poplar_pressure_plate",
+        "minecraft:spruce_pressure_plate",
+        "minecraft:warped_pressure_plate"
+      ]
+    },
+    {
+      "id": "wood.sign",
+      "title": "立式告示牌",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_sign",
+        "minecraft:bamboo_sign",
+        "minecraft:birch_sign",
+        "minecraft:cherry_sign",
+        "minecraft:crimson_sign",
+        "minecraft:dark_oak_sign",
+        "minecraft:jungle_sign",
+        "minecraft:mangrove_sign",
+        "minecraft:oak_sign",
+        "minecraft:pale_oak_sign",
+        "minecraft:poplar_sign",
+        "minecraft:spruce_sign",
+        "minecraft:warped_sign"
+      ]
+    },
+    {
+      "id": "wood.wall_sign",
+      "title": "墙式告示牌",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_wall_sign",
+        "minecraft:bamboo_wall_sign",
+        "minecraft:birch_wall_sign",
+        "minecraft:cherry_wall_sign",
+        "minecraft:crimson_wall_sign",
+        "minecraft:dark_oak_wall_sign",
+        "minecraft:jungle_wall_sign",
+        "minecraft:mangrove_wall_sign",
+        "minecraft:oak_wall_sign",
+        "minecraft:pale_oak_wall_sign",
+        "minecraft:poplar_wall_sign",
+        "minecraft:spruce_wall_sign",
+        "minecraft:warped_wall_sign"
+      ]
+    },
+    {
+      "id": "wood.hanging_sign",
+      "title": "悬挂告示牌",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_hanging_sign",
+        "minecraft:bamboo_hanging_sign",
+        "minecraft:birch_hanging_sign",
+        "minecraft:cherry_hanging_sign",
+        "minecraft:crimson_hanging_sign",
+        "minecraft:dark_oak_hanging_sign",
+        "minecraft:jungle_hanging_sign",
+        "minecraft:mangrove_hanging_sign",
+        "minecraft:oak_hanging_sign",
+        "minecraft:pale_oak_hanging_sign",
+        "minecraft:poplar_hanging_sign",
+        "minecraft:spruce_hanging_sign",
+        "minecraft:warped_hanging_sign"
+      ]
+    },
+    {
+      "id": "wood.wall_hanging_sign",
+      "title": "墙式悬挂告示牌",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_wall_hanging_sign",
+        "minecraft:bamboo_wall_hanging_sign",
+        "minecraft:birch_wall_hanging_sign",
+        "minecraft:cherry_wall_hanging_sign",
+        "minecraft:crimson_wall_hanging_sign",
+        "minecraft:dark_oak_wall_hanging_sign",
+        "minecraft:jungle_wall_hanging_sign",
+        "minecraft:mangrove_wall_hanging_sign",
+        "minecraft:oak_wall_hanging_sign",
+        "minecraft:pale_oak_wall_hanging_sign",
+        "minecraft:poplar_wall_hanging_sign",
+        "minecraft:spruce_wall_hanging_sign",
+        "minecraft:warped_wall_hanging_sign"
+      ]
+    },
+    {
+      "id": "wood.shelf",
+      "title": "木置物架",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_shelf",
+        "minecraft:bamboo_shelf",
+        "minecraft:birch_shelf",
+        "minecraft:cherry_shelf",
+        "minecraft:crimson_shelf",
+        "minecraft:dark_oak_shelf",
+        "minecraft:jungle_shelf",
+        "minecraft:mangrove_shelf",
+        "minecraft:oak_shelf",
+        "minecraft:pale_oak_shelf",
+        "minecraft:poplar_shelf",
+        "minecraft:spruce_shelf",
+        "minecraft:warped_shelf"
+      ]
+    },
+    {
+      "id": "wood.all",
+      "title": "木材互换（同形状，不限树种与加工形式）",
+      "category": "木材",
+      "members": [
+        "minecraft:acacia_button",
+        "minecraft:acacia_door",
+        "minecraft:acacia_fence",
+        "minecraft:acacia_fence_gate",
+        "minecraft:acacia_hanging_sign",
+        "minecraft:acacia_log",
+        "minecraft:acacia_planks",
+        "minecraft:acacia_pressure_plate",
+        "minecraft:acacia_shelf",
+        "minecraft:acacia_sign",
+        "minecraft:acacia_slab",
+        "minecraft:acacia_stairs",
+        "minecraft:acacia_trapdoor",
+        "minecraft:acacia_wall_hanging_sign",
+        "minecraft:acacia_wall_sign",
+        "minecraft:acacia_wood",
+        "minecraft:bamboo_block",
+        "minecraft:bamboo_button",
+        "minecraft:bamboo_door",
+        "minecraft:bamboo_fence",
+        "minecraft:bamboo_fence_gate",
+        "minecraft:bamboo_hanging_sign",
+        "minecraft:bamboo_mosaic",
+        "minecraft:bamboo_mosaic_slab",
+        "minecraft:bamboo_mosaic_stairs",
+        "minecraft:bamboo_planks",
+        "minecraft:bamboo_pressure_plate",
+        "minecraft:bamboo_shelf",
+        "minecraft:bamboo_sign",
+        "minecraft:bamboo_slab",
+        "minecraft:bamboo_stairs",
+        "minecraft:bamboo_trapdoor",
+        "minecraft:bamboo_wall_hanging_sign",
+        "minecraft:bamboo_wall_sign",
+        "minecraft:birch_button",
+        "minecraft:birch_door",
+        "minecraft:birch_fence",
+        "minecraft:birch_fence_gate",
+        "minecraft:birch_hanging_sign",
+        "minecraft:birch_log",
+        "minecraft:birch_planks",
+        "minecraft:birch_pressure_plate",
+        "minecraft:birch_shelf",
+        "minecraft:birch_sign",
+        "minecraft:birch_slab",
+        "minecraft:birch_stairs",
+        "minecraft:birch_trapdoor",
+        "minecraft:birch_wall_hanging_sign",
+        "minecraft:birch_wall_sign",
+        "minecraft:birch_wood",
+        "minecraft:cherry_button",
+        "minecraft:cherry_door",
+        "minecraft:cherry_fence",
+        "minecraft:cherry_fence_gate",
+        "minecraft:cherry_hanging_sign",
+        "minecraft:cherry_log",
+        "minecraft:cherry_planks",
+        "minecraft:cherry_pressure_plate",
+        "minecraft:cherry_shelf",
+        "minecraft:cherry_sign",
+        "minecraft:cherry_slab",
+        "minecraft:cherry_stairs",
+        "minecraft:cherry_trapdoor",
+        "minecraft:cherry_wall_hanging_sign",
+        "minecraft:cherry_wall_sign",
+        "minecraft:cherry_wood",
+        "minecraft:crimson_button",
+        "minecraft:crimson_door",
+        "minecraft:crimson_fence",
+        "minecraft:crimson_fence_gate",
+        "minecraft:crimson_hanging_sign",
+        "minecraft:crimson_hyphae",
+        "minecraft:crimson_planks",
+        "minecraft:crimson_pressure_plate",
+        "minecraft:crimson_shelf",
+        "minecraft:crimson_sign",
+        "minecraft:crimson_slab",
+        "minecraft:crimson_stairs",
+        "minecraft:crimson_stem",
+        "minecraft:crimson_trapdoor",
+        "minecraft:crimson_wall_hanging_sign",
+        "minecraft:crimson_wall_sign",
+        "minecraft:dark_oak_button",
+        "minecraft:dark_oak_door",
+        "minecraft:dark_oak_fence",
+        "minecraft:dark_oak_fence_gate",
+        "minecraft:dark_oak_hanging_sign",
+        "minecraft:dark_oak_log",
+        "minecraft:dark_oak_planks",
+        "minecraft:dark_oak_pressure_plate",
+        "minecraft:dark_oak_shelf",
+        "minecraft:dark_oak_sign",
+        "minecraft:dark_oak_slab",
+        "minecraft:dark_oak_stairs",
+        "minecraft:dark_oak_trapdoor",
+        "minecraft:dark_oak_wall_hanging_sign",
+        "minecraft:dark_oak_wall_sign",
+        "minecraft:dark_oak_wood",
+        "minecraft:jungle_button",
+        "minecraft:jungle_door",
+        "minecraft:jungle_fence",
+        "minecraft:jungle_fence_gate",
+        "minecraft:jungle_hanging_sign",
+        "minecraft:jungle_log",
+        "minecraft:jungle_planks",
+        "minecraft:jungle_pressure_plate",
+        "minecraft:jungle_shelf",
+        "minecraft:jungle_sign",
+        "minecraft:jungle_slab",
+        "minecraft:jungle_stairs",
+        "minecraft:jungle_trapdoor",
+        "minecraft:jungle_wall_hanging_sign",
+        "minecraft:jungle_wall_sign",
+        "minecraft:jungle_wood",
+        "minecraft:mangrove_button",
+        "minecraft:mangrove_door",
+        "minecraft:mangrove_fence",
+        "minecraft:mangrove_fence_gate",
+        "minecraft:mangrove_hanging_sign",
+        "minecraft:mangrove_log",
+        "minecraft:mangrove_planks",
+        "minecraft:mangrove_pressure_plate",
+        "minecraft:mangrove_shelf",
+        "minecraft:mangrove_sign",
+        "minecraft:mangrove_slab",
+        "minecraft:mangrove_stairs",
+        "minecraft:mangrove_trapdoor",
+        "minecraft:mangrove_wall_hanging_sign",
+        "minecraft:mangrove_wall_sign",
+        "minecraft:mangrove_wood",
+        "minecraft:oak_button",
+        "minecraft:oak_door",
+        "minecraft:oak_fence",
+        "minecraft:oak_fence_gate",
+        "minecraft:oak_hanging_sign",
+        "minecraft:oak_log",
+        "minecraft:oak_planks",
+        "minecraft:oak_pressure_plate",
+        "minecraft:oak_shelf",
+        "minecraft:oak_sign",
+        "minecraft:oak_slab",
+        "minecraft:oak_stairs",
+        "minecraft:oak_trapdoor",
+        "minecraft:oak_wall_hanging_sign",
+        "minecraft:oak_wall_sign",
+        "minecraft:oak_wood",
+        "minecraft:pale_oak_button",
+        "minecraft:pale_oak_door",
+        "minecraft:pale_oak_fence",
+        "minecraft:pale_oak_fence_gate",
+        "minecraft:pale_oak_hanging_sign",
+        "minecraft:pale_oak_log",
+        "minecraft:pale_oak_planks",
+        "minecraft:pale_oak_pressure_plate",
+        "minecraft:pale_oak_shelf",
+        "minecraft:pale_oak_sign",
+        "minecraft:pale_oak_slab",
+        "minecraft:pale_oak_stairs",
+        "minecraft:pale_oak_trapdoor",
+        "minecraft:pale_oak_wall_hanging_sign",
+        "minecraft:pale_oak_wall_sign",
+        "minecraft:pale_oak_wood",
+        "minecraft:poplar_button",
+        "minecraft:poplar_door",
+        "minecraft:poplar_fence",
+        "minecraft:poplar_fence_gate",
+        "minecraft:poplar_hanging_sign",
+        "minecraft:poplar_log",
+        "minecraft:poplar_planks",
+        "minecraft:poplar_pressure_plate",
+        "minecraft:poplar_shelf",
+        "minecraft:poplar_sign",
+        "minecraft:poplar_slab",
+        "minecraft:poplar_stairs",
+        "minecraft:poplar_trapdoor",
+        "minecraft:poplar_wall_hanging_sign",
+        "minecraft:poplar_wall_sign",
+        "minecraft:poplar_wood",
+        "minecraft:spruce_button",
+        "minecraft:spruce_door",
+        "minecraft:spruce_fence",
+        "minecraft:spruce_fence_gate",
+        "minecraft:spruce_hanging_sign",
+        "minecraft:spruce_log",
+        "minecraft:spruce_planks",
+        "minecraft:spruce_pressure_plate",
+        "minecraft:spruce_shelf",
+        "minecraft:spruce_sign",
+        "minecraft:spruce_slab",
+        "minecraft:spruce_stairs",
+        "minecraft:spruce_trapdoor",
+        "minecraft:spruce_wall_hanging_sign",
+        "minecraft:spruce_wall_sign",
+        "minecraft:spruce_wood",
+        "minecraft:stripped_acacia_log",
+        "minecraft:stripped_acacia_wood",
+        "minecraft:stripped_bamboo_block",
+        "minecraft:stripped_birch_log",
+        "minecraft:stripped_birch_wood",
+        "minecraft:stripped_cherry_log",
+        "minecraft:stripped_cherry_wood",
+        "minecraft:stripped_crimson_hyphae",
+        "minecraft:stripped_crimson_stem",
+        "minecraft:stripped_dark_oak_log",
+        "minecraft:stripped_dark_oak_wood",
+        "minecraft:stripped_jungle_log",
+        "minecraft:stripped_jungle_wood",
+        "minecraft:stripped_mangrove_log",
+        "minecraft:stripped_mangrove_wood",
+        "minecraft:stripped_oak_log",
+        "minecraft:stripped_oak_wood",
+        "minecraft:stripped_pale_oak_log",
+        "minecraft:stripped_pale_oak_wood",
+        "minecraft:stripped_poplar_log",
+        "minecraft:stripped_poplar_wood",
+        "minecraft:stripped_spruce_log",
+        "minecraft:stripped_spruce_wood",
+        "minecraft:stripped_warped_hyphae",
+        "minecraft:stripped_warped_stem",
+        "minecraft:warped_button",
+        "minecraft:warped_door",
+        "minecraft:warped_fence",
+        "minecraft:warped_fence_gate",
+        "minecraft:warped_hanging_sign",
+        "minecraft:warped_hyphae",
+        "minecraft:warped_planks",
+        "minecraft:warped_pressure_plate",
+        "minecraft:warped_shelf",
+        "minecraft:warped_sign",
+        "minecraft:warped_slab",
+        "minecraft:warped_stairs",
+        "minecraft:warped_stem",
+        "minecraft:warped_trapdoor",
+        "minecraft:warped_wall_hanging_sign",
+        "minecraft:warped_wall_sign"
+      ]
+    },
+    {
+      "id": "stone.stone",
+      "title": "石头与石砖（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_stone_bricks",
+        "minecraft:cobblestone",
+        "minecraft:cobblestone_slab",
+        "minecraft:cobblestone_stairs",
+        "minecraft:cobblestone_wall",
+        "minecraft:cracked_stone_bricks",
+        "minecraft:mossy_cobblestone",
+        "minecraft:mossy_cobblestone_slab",
+        "minecraft:mossy_cobblestone_stairs",
+        "minecraft:mossy_cobblestone_wall",
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:mossy_stone_brick_stairs",
+        "minecraft:mossy_stone_brick_wall",
+        "minecraft:mossy_stone_bricks",
+        "minecraft:smooth_stone",
+        "minecraft:smooth_stone_slab",
+        "minecraft:stone",
+        "minecraft:stone_brick_slab",
+        "minecraft:stone_brick_stairs",
+        "minecraft:stone_brick_wall",
+        "minecraft:stone_bricks",
+        "minecraft:stone_slab",
+        "minecraft:stone_stairs"
+      ]
+    },
+    {
+      "id": "stone.stone.full",
+      "title": "石头与平滑石头 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:smooth_stone",
+        "minecraft:stone"
+      ]
+    },
+    {
+      "id": "stone.stone.slab",
+      "title": "石头与平滑石头 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:smooth_stone_slab",
+        "minecraft:stone_slab"
+      ]
+    },
+    {
+      "id": "stone.cobblestone.full",
+      "title": "圆石与苔石 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:cobblestone",
+        "minecraft:mossy_cobblestone"
+      ]
+    },
+    {
+      "id": "stone.cobblestone.stairs",
+      "title": "圆石与苔石 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:cobblestone_stairs",
+        "minecraft:mossy_cobblestone_stairs"
+      ]
+    },
+    {
+      "id": "stone.cobblestone.slab",
+      "title": "圆石与苔石 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:cobblestone_slab",
+        "minecraft:mossy_cobblestone_slab"
+      ]
+    },
+    {
+      "id": "stone.cobblestone.wall",
+      "title": "圆石与苔石 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:cobblestone_wall",
+        "minecraft:mossy_cobblestone_wall"
+      ]
+    },
+    {
+      "id": "stone.stone_brick.full",
+      "title": "石砖变种 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_stone_bricks",
+        "minecraft:cracked_stone_bricks",
+        "minecraft:mossy_stone_bricks",
+        "minecraft:stone_bricks"
+      ]
+    },
+    {
+      "id": "stone.stone_brick.stairs",
+      "title": "石砖变种 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:mossy_stone_brick_stairs",
+        "minecraft:stone_brick_stairs"
+      ]
+    },
+    {
+      "id": "stone.stone_brick.slab",
+      "title": "石砖变种 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:stone_brick_slab"
+      ]
+    },
+    {
+      "id": "stone.stone_brick.wall",
+      "title": "石砖变种 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:mossy_stone_brick_wall",
+        "minecraft:stone_brick_wall"
+      ]
+    },
+    {
+      "id": "stone.granite",
+      "title": "花岗岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:granite",
+        "minecraft:granite_slab",
+        "minecraft:granite_stairs",
+        "minecraft:granite_wall",
+        "minecraft:polished_granite",
+        "minecraft:polished_granite_slab",
+        "minecraft:polished_granite_stairs"
+      ]
+    },
+    {
+      "id": "stone.granite.full",
+      "title": "花岗岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:granite",
+        "minecraft:polished_granite"
+      ]
+    },
+    {
+      "id": "stone.granite.stairs",
+      "title": "花岗岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:granite_stairs",
+        "minecraft:polished_granite_stairs"
+      ]
+    },
+    {
+      "id": "stone.granite.slab",
+      "title": "花岗岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:granite_slab",
+        "minecraft:polished_granite_slab"
+      ]
+    },
+    {
+      "id": "stone.diorite",
+      "title": "闪长岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:diorite",
+        "minecraft:diorite_slab",
+        "minecraft:diorite_stairs",
+        "minecraft:diorite_wall",
+        "minecraft:polished_diorite",
+        "minecraft:polished_diorite_slab",
+        "minecraft:polished_diorite_stairs"
+      ]
+    },
+    {
+      "id": "stone.diorite.full",
+      "title": "闪长岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:diorite",
+        "minecraft:polished_diorite"
+      ]
+    },
+    {
+      "id": "stone.diorite.stairs",
+      "title": "闪长岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:diorite_stairs",
+        "minecraft:polished_diorite_stairs"
+      ]
+    },
+    {
+      "id": "stone.diorite.slab",
+      "title": "闪长岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:diorite_slab",
+        "minecraft:polished_diorite_slab"
+      ]
+    },
+    {
+      "id": "stone.andesite",
+      "title": "安山岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:andesite",
+        "minecraft:andesite_slab",
+        "minecraft:andesite_stairs",
+        "minecraft:andesite_wall",
+        "minecraft:polished_andesite",
+        "minecraft:polished_andesite_slab",
+        "minecraft:polished_andesite_stairs"
+      ]
+    },
+    {
+      "id": "stone.andesite.full",
+      "title": "安山岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite",
+        "minecraft:polished_andesite"
+      ]
+    },
+    {
+      "id": "stone.andesite.stairs",
+      "title": "安山岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite_stairs",
+        "minecraft:polished_andesite_stairs"
+      ]
+    },
+    {
+      "id": "stone.andesite.slab",
+      "title": "安山岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite_slab",
+        "minecraft:polished_andesite_slab"
+      ]
+    },
+    {
+      "id": "stone.deepslate",
+      "title": "深板岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_deepslate",
+        "minecraft:cobbled_deepslate",
+        "minecraft:cobbled_deepslate_slab",
+        "minecraft:cobbled_deepslate_stairs",
+        "minecraft:cobbled_deepslate_wall",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:cracked_deepslate_tiles",
+        "minecraft:deepslate",
+        "minecraft:deepslate_brick_slab",
+        "minecraft:deepslate_brick_stairs",
+        "minecraft:deepslate_brick_wall",
+        "minecraft:deepslate_bricks",
+        "minecraft:deepslate_tile_slab",
+        "minecraft:deepslate_tile_stairs",
+        "minecraft:deepslate_tile_wall",
+        "minecraft:deepslate_tiles",
+        "minecraft:polished_deepslate",
+        "minecraft:polished_deepslate_slab",
+        "minecraft:polished_deepslate_stairs",
+        "minecraft:polished_deepslate_wall"
+      ]
+    },
+    {
+      "id": "stone.deepslate.full",
+      "title": "深板岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_deepslate",
+        "minecraft:cobbled_deepslate",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:cracked_deepslate_tiles",
+        "minecraft:deepslate",
+        "minecraft:deepslate_bricks",
+        "minecraft:deepslate_tiles",
+        "minecraft:polished_deepslate"
+      ]
+    },
+    {
+      "id": "stone.deepslate.stairs",
+      "title": "深板岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:cobbled_deepslate_stairs",
+        "minecraft:deepslate_brick_stairs",
+        "minecraft:deepslate_tile_stairs",
+        "minecraft:polished_deepslate_stairs"
+      ]
+    },
+    {
+      "id": "stone.deepslate.slab",
+      "title": "深板岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:cobbled_deepslate_slab",
+        "minecraft:deepslate_brick_slab",
+        "minecraft:deepslate_tile_slab",
+        "minecraft:polished_deepslate_slab"
+      ]
+    },
+    {
+      "id": "stone.deepslate.wall",
+      "title": "深板岩 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:cobbled_deepslate_wall",
+        "minecraft:deepslate_brick_wall",
+        "minecraft:deepslate_tile_wall",
+        "minecraft:polished_deepslate_wall"
+      ]
+    },
+    {
+      "id": "stone.tuff",
+      "title": "凝灰岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_tuff",
+        "minecraft:chiseled_tuff_bricks",
+        "minecraft:polished_tuff",
+        "minecraft:polished_tuff_slab",
+        "minecraft:polished_tuff_stairs",
+        "minecraft:polished_tuff_wall",
+        "minecraft:tuff",
+        "minecraft:tuff_brick_slab",
+        "minecraft:tuff_brick_stairs",
+        "minecraft:tuff_brick_wall",
+        "minecraft:tuff_bricks",
+        "minecraft:tuff_slab",
+        "minecraft:tuff_stairs",
+        "minecraft:tuff_wall"
+      ]
+    },
+    {
+      "id": "stone.tuff.full",
+      "title": "凝灰岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_tuff",
+        "minecraft:chiseled_tuff_bricks",
+        "minecraft:polished_tuff",
+        "minecraft:tuff",
+        "minecraft:tuff_bricks"
+      ]
+    },
+    {
+      "id": "stone.tuff.stairs",
+      "title": "凝灰岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:polished_tuff_stairs",
+        "minecraft:tuff_brick_stairs",
+        "minecraft:tuff_stairs"
+      ]
+    },
+    {
+      "id": "stone.tuff.slab",
+      "title": "凝灰岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:polished_tuff_slab",
+        "minecraft:tuff_brick_slab",
+        "minecraft:tuff_slab"
+      ]
+    },
+    {
+      "id": "stone.tuff.wall",
+      "title": "凝灰岩 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:polished_tuff_wall",
+        "minecraft:tuff_brick_wall",
+        "minecraft:tuff_wall"
+      ]
+    },
+    {
+      "id": "stone.blackstone",
+      "title": "黑石（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:blackstone",
+        "minecraft:blackstone_slab",
+        "minecraft:blackstone_stairs",
+        "minecraft:blackstone_wall",
+        "minecraft:chiseled_polished_blackstone",
+        "minecraft:cracked_polished_blackstone_bricks",
+        "minecraft:polished_blackstone",
+        "minecraft:polished_blackstone_brick_slab",
+        "minecraft:polished_blackstone_brick_stairs",
+        "minecraft:polished_blackstone_brick_wall",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:polished_blackstone_slab",
+        "minecraft:polished_blackstone_stairs",
+        "minecraft:polished_blackstone_wall"
+      ]
+    },
+    {
+      "id": "stone.blackstone.full",
+      "title": "黑石 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:blackstone",
+        "minecraft:chiseled_polished_blackstone",
+        "minecraft:cracked_polished_blackstone_bricks",
+        "minecraft:polished_blackstone",
+        "minecraft:polished_blackstone_bricks"
+      ]
+    },
+    {
+      "id": "stone.blackstone.stairs",
+      "title": "黑石 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:blackstone_stairs",
+        "minecraft:polished_blackstone_brick_stairs",
+        "minecraft:polished_blackstone_stairs"
+      ]
+    },
+    {
+      "id": "stone.blackstone.slab",
+      "title": "黑石 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:blackstone_slab",
+        "minecraft:polished_blackstone_brick_slab",
+        "minecraft:polished_blackstone_slab"
+      ]
+    },
+    {
+      "id": "stone.blackstone.wall",
+      "title": "黑石 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:blackstone_wall",
+        "minecraft:polished_blackstone_brick_wall",
+        "minecraft:polished_blackstone_wall"
+      ]
+    },
+    {
+      "id": "stone.sandstone",
+      "title": "砂岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:cut_sandstone_slab",
+        "minecraft:sandstone",
+        "minecraft:sandstone_slab",
+        "minecraft:sandstone_stairs",
+        "minecraft:sandstone_wall",
+        "minecraft:smooth_sandstone",
+        "minecraft:smooth_sandstone_slab",
+        "minecraft:smooth_sandstone_stairs"
+      ]
+    },
+    {
+      "id": "stone.sandstone.full",
+      "title": "砂岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:sandstone",
+        "minecraft:smooth_sandstone"
+      ]
+    },
+    {
+      "id": "stone.sandstone.stairs",
+      "title": "砂岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:sandstone_stairs",
+        "minecraft:smooth_sandstone_stairs"
+      ]
+    },
+    {
+      "id": "stone.sandstone.slab",
+      "title": "砂岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:cut_sandstone_slab",
+        "minecraft:sandstone_slab",
+        "minecraft:smooth_sandstone_slab"
+      ]
+    },
+    {
+      "id": "stone.red_sandstone",
+      "title": "红砂岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_red_sandstone",
+        "minecraft:cut_red_sandstone",
+        "minecraft:cut_red_sandstone_slab",
+        "minecraft:red_sandstone",
+        "minecraft:red_sandstone_slab",
+        "minecraft:red_sandstone_stairs",
+        "minecraft:red_sandstone_wall",
+        "minecraft:smooth_red_sandstone",
+        "minecraft:smooth_red_sandstone_slab",
+        "minecraft:smooth_red_sandstone_stairs"
+      ]
+    },
+    {
+      "id": "stone.red_sandstone.full",
+      "title": "红砂岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_red_sandstone",
+        "minecraft:cut_red_sandstone",
+        "minecraft:red_sandstone",
+        "minecraft:smooth_red_sandstone"
+      ]
+    },
+    {
+      "id": "stone.red_sandstone.stairs",
+      "title": "红砂岩 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:red_sandstone_stairs",
+        "minecraft:smooth_red_sandstone_stairs"
+      ]
+    },
+    {
+      "id": "stone.red_sandstone.slab",
+      "title": "红砂岩 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:cut_red_sandstone_slab",
+        "minecraft:red_sandstone_slab",
+        "minecraft:smooth_red_sandstone_slab"
+      ]
+    },
+    {
+      "id": "stone.nether_brick",
+      "title": "下界砖（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_nether_bricks",
+        "minecraft:cracked_nether_bricks",
+        "minecraft:nether_brick_slab",
+        "minecraft:nether_brick_stairs",
+        "minecraft:nether_brick_wall",
+        "minecraft:nether_bricks",
+        "minecraft:red_nether_brick_slab",
+        "minecraft:red_nether_brick_stairs",
+        "minecraft:red_nether_brick_wall",
+        "minecraft:red_nether_bricks"
+      ]
+    },
+    {
+      "id": "stone.nether_brick.full",
+      "title": "下界砖 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_nether_bricks",
+        "minecraft:cracked_nether_bricks",
+        "minecraft:nether_bricks",
+        "minecraft:red_nether_bricks"
+      ]
+    },
+    {
+      "id": "stone.nether_brick.stairs",
+      "title": "下界砖 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:nether_brick_stairs",
+        "minecraft:red_nether_brick_stairs"
+      ]
+    },
+    {
+      "id": "stone.nether_brick.slab",
+      "title": "下界砖 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:nether_brick_slab",
+        "minecraft:red_nether_brick_slab"
+      ]
+    },
+    {
+      "id": "stone.nether_brick.wall",
+      "title": "下界砖 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:nether_brick_wall",
+        "minecraft:red_nether_brick_wall"
+      ]
+    },
+    {
+      "id": "stone.prismarine",
+      "title": "海晶石（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:dark_prismarine",
+        "minecraft:dark_prismarine_slab",
+        "minecraft:dark_prismarine_stairs",
+        "minecraft:prismarine",
+        "minecraft:prismarine_brick_slab",
+        "minecraft:prismarine_brick_stairs",
+        "minecraft:prismarine_bricks",
+        "minecraft:prismarine_slab",
+        "minecraft:prismarine_stairs",
+        "minecraft:prismarine_wall"
+      ]
+    },
+    {
+      "id": "stone.prismarine.full",
+      "title": "海晶石 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:dark_prismarine",
+        "minecraft:prismarine",
+        "minecraft:prismarine_bricks"
+      ]
+    },
+    {
+      "id": "stone.prismarine.stairs",
+      "title": "海晶石 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:dark_prismarine_stairs",
+        "minecraft:prismarine_brick_stairs",
+        "minecraft:prismarine_stairs"
+      ]
+    },
+    {
+      "id": "stone.prismarine.slab",
+      "title": "海晶石 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:dark_prismarine_slab",
+        "minecraft:prismarine_brick_slab",
+        "minecraft:prismarine_slab"
+      ]
+    },
+    {
+      "id": "stone.quartz",
+      "title": "石英（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_quartz_block",
+        "minecraft:quartz_block",
+        "minecraft:quartz_bricks",
+        "minecraft:quartz_pillar",
+        "minecraft:quartz_slab",
+        "minecraft:quartz_stairs",
+        "minecraft:smooth_quartz",
+        "minecraft:smooth_quartz_slab",
+        "minecraft:smooth_quartz_stairs"
+      ]
+    },
+    {
+      "id": "stone.quartz.full",
+      "title": "石英 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_quartz_block",
+        "minecraft:quartz_block",
+        "minecraft:quartz_bricks",
+        "minecraft:quartz_pillar",
+        "minecraft:smooth_quartz"
+      ]
+    },
+    {
+      "id": "stone.quartz.stairs",
+      "title": "石英 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:quartz_stairs",
+        "minecraft:smooth_quartz_stairs"
+      ]
+    },
+    {
+      "id": "stone.quartz.slab",
+      "title": "石英 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:quartz_slab",
+        "minecraft:smooth_quartz_slab"
+      ]
+    },
+    {
+      "id": "stone.purpur",
+      "title": "紫珀（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:purpur_block",
+        "minecraft:purpur_pillar",
+        "minecraft:purpur_slab",
+        "minecraft:purpur_stairs"
+      ]
+    },
+    {
+      "id": "stone.purpur.full",
+      "title": "紫珀 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:purpur_block",
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "id": "stone.end_stone",
+      "title": "末地石（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:end_stone",
+        "minecraft:end_stone_brick_slab",
+        "minecraft:end_stone_brick_stairs",
+        "minecraft:end_stone_brick_wall",
+        "minecraft:end_stone_bricks"
+      ]
+    },
+    {
+      "id": "stone.end_stone.full",
+      "title": "末地石 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:end_stone",
+        "minecraft:end_stone_bricks"
+      ]
+    },
+    {
+      "id": "stone.brick",
+      "title": "红砖（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:brick_slab",
+        "minecraft:brick_stairs",
+        "minecraft:brick_wall",
+        "minecraft:bricks"
+      ]
+    },
+    {
+      "id": "stone.mud_brick",
+      "title": "泥砖（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:mud_brick_slab",
+        "minecraft:mud_brick_stairs",
+        "minecraft:mud_brick_wall",
+        "minecraft:mud_bricks"
+      ]
+    },
+    {
+      "id": "stone.resin_brick",
+      "title": "树脂砖（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_resin_bricks",
+        "minecraft:resin_brick_slab",
+        "minecraft:resin_brick_stairs",
+        "minecraft:resin_brick_wall",
+        "minecraft:resin_bricks"
+      ]
+    },
+    {
+      "id": "stone.resin_brick.full",
+      "title": "树脂砖 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_resin_bricks",
+        "minecraft:resin_bricks"
+      ]
+    },
+    {
+      "id": "stone.sulfur",
+      "title": "硫磺建筑材料（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_sulfur",
+        "minecraft:polished_sulfur",
+        "minecraft:polished_sulfur_slab",
+        "minecraft:polished_sulfur_stairs",
+        "minecraft:polished_sulfur_wall",
+        "minecraft:sulfur",
+        "minecraft:sulfur_brick_slab",
+        "minecraft:sulfur_brick_stairs",
+        "minecraft:sulfur_brick_wall",
+        "minecraft:sulfur_bricks",
+        "minecraft:sulfur_slab",
+        "minecraft:sulfur_stairs",
+        "minecraft:sulfur_wall"
+      ]
+    },
+    {
+      "id": "stone.sulfur.full",
+      "title": "硫磺建筑材料 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_sulfur",
+        "minecraft:polished_sulfur",
+        "minecraft:sulfur",
+        "minecraft:sulfur_bricks"
+      ]
+    },
+    {
+      "id": "stone.sulfur.stairs",
+      "title": "硫磺建筑材料 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:polished_sulfur_stairs",
+        "minecraft:sulfur_brick_stairs",
+        "minecraft:sulfur_stairs"
+      ]
+    },
+    {
+      "id": "stone.sulfur.slab",
+      "title": "硫磺建筑材料 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:polished_sulfur_slab",
+        "minecraft:sulfur_brick_slab",
+        "minecraft:sulfur_slab"
+      ]
+    },
+    {
+      "id": "stone.sulfur.wall",
+      "title": "硫磺建筑材料 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:polished_sulfur_wall",
+        "minecraft:sulfur_brick_wall",
+        "minecraft:sulfur_wall"
+      ]
+    },
+    {
+      "id": "stone.cinnabar",
+      "title": "辰砂建筑材料（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:chiseled_cinnabar",
+        "minecraft:cinnabar",
+        "minecraft:cinnabar_brick_slab",
+        "minecraft:cinnabar_brick_stairs",
+        "minecraft:cinnabar_brick_wall",
+        "minecraft:cinnabar_bricks",
+        "minecraft:cinnabar_slab",
+        "minecraft:cinnabar_stairs",
+        "minecraft:cinnabar_wall",
+        "minecraft:polished_cinnabar",
+        "minecraft:polished_cinnabar_slab",
+        "minecraft:polished_cinnabar_stairs",
+        "minecraft:polished_cinnabar_wall"
+      ]
+    },
+    {
+      "id": "stone.cinnabar.full",
+      "title": "辰砂建筑材料 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:chiseled_cinnabar",
+        "minecraft:cinnabar",
+        "minecraft:cinnabar_bricks",
+        "minecraft:polished_cinnabar"
+      ]
+    },
+    {
+      "id": "stone.cinnabar.stairs",
+      "title": "辰砂建筑材料 / 楼梯",
+      "category": "石材",
+      "members": [
+        "minecraft:cinnabar_brick_stairs",
+        "minecraft:cinnabar_stairs",
+        "minecraft:polished_cinnabar_stairs"
+      ]
+    },
+    {
+      "id": "stone.cinnabar.slab",
+      "title": "辰砂建筑材料 / 半砖",
+      "category": "石材",
+      "members": [
+        "minecraft:cinnabar_brick_slab",
+        "minecraft:cinnabar_slab",
+        "minecraft:polished_cinnabar_slab"
+      ]
+    },
+    {
+      "id": "stone.cinnabar.wall",
+      "title": "辰砂建筑材料 / 墙",
+      "category": "石材",
+      "members": [
+        "minecraft:cinnabar_brick_wall",
+        "minecraft:cinnabar_wall",
+        "minecraft:polished_cinnabar_wall"
+      ]
+    },
+    {
+      "id": "stone.basalt",
+      "title": "玄武岩（旧版系列规则）",
+      "category": "兼容",
+      "members": [
+        "minecraft:basalt",
+        "minecraft:polished_basalt",
+        "minecraft:smooth_basalt"
+      ]
+    },
+    {
+      "id": "stone.basalt.full",
+      "title": "玄武岩 / 完整方块",
+      "category": "石材",
+      "members": [
+        "minecraft:basalt",
+        "minecraft:polished_basalt",
+        "minecraft:smooth_basalt"
+      ]
+    },
+    {
+      "id": "stone.all",
+      "title": "全系列石材互认（保持形状）",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite",
+        "minecraft:andesite_slab",
+        "minecraft:andesite_stairs",
+        "minecraft:andesite_wall",
+        "minecraft:basalt",
+        "minecraft:blackstone",
+        "minecraft:blackstone_slab",
+        "minecraft:blackstone_stairs",
+        "minecraft:blackstone_wall",
+        "minecraft:brick_slab",
+        "minecraft:brick_stairs",
+        "minecraft:brick_wall",
+        "minecraft:bricks",
+        "minecraft:chiseled_cinnabar",
+        "minecraft:chiseled_deepslate",
+        "minecraft:chiseled_nether_bricks",
+        "minecraft:chiseled_polished_blackstone",
+        "minecraft:chiseled_quartz_block",
+        "minecraft:chiseled_red_sandstone",
+        "minecraft:chiseled_resin_bricks",
+        "minecraft:chiseled_sandstone",
+        "minecraft:chiseled_stone_bricks",
+        "minecraft:chiseled_sulfur",
+        "minecraft:chiseled_tuff",
+        "minecraft:chiseled_tuff_bricks",
+        "minecraft:cinnabar",
+        "minecraft:cinnabar_brick_slab",
+        "minecraft:cinnabar_brick_stairs",
+        "minecraft:cinnabar_brick_wall",
+        "minecraft:cinnabar_bricks",
+        "minecraft:cinnabar_slab",
+        "minecraft:cinnabar_stairs",
+        "minecraft:cinnabar_wall",
+        "minecraft:cobbled_deepslate",
+        "minecraft:cobbled_deepslate_slab",
+        "minecraft:cobbled_deepslate_stairs",
+        "minecraft:cobbled_deepslate_wall",
+        "minecraft:cobblestone",
+        "minecraft:cobblestone_slab",
+        "minecraft:cobblestone_stairs",
+        "minecraft:cobblestone_wall",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:cracked_deepslate_tiles",
+        "minecraft:cracked_nether_bricks",
+        "minecraft:cracked_polished_blackstone_bricks",
+        "minecraft:cracked_stone_bricks",
+        "minecraft:cut_red_sandstone",
+        "minecraft:cut_red_sandstone_slab",
+        "minecraft:cut_sandstone",
+        "minecraft:cut_sandstone_slab",
+        "minecraft:dark_prismarine",
+        "minecraft:dark_prismarine_slab",
+        "minecraft:dark_prismarine_stairs",
+        "minecraft:deepslate",
+        "minecraft:deepslate_brick_slab",
+        "minecraft:deepslate_brick_stairs",
+        "minecraft:deepslate_brick_wall",
+        "minecraft:deepslate_bricks",
+        "minecraft:deepslate_tile_slab",
+        "minecraft:deepslate_tile_stairs",
+        "minecraft:deepslate_tile_wall",
+        "minecraft:deepslate_tiles",
+        "minecraft:diorite",
+        "minecraft:diorite_slab",
+        "minecraft:diorite_stairs",
+        "minecraft:diorite_wall",
+        "minecraft:end_stone",
+        "minecraft:end_stone_brick_slab",
+        "minecraft:end_stone_brick_stairs",
+        "minecraft:end_stone_brick_wall",
+        "minecraft:end_stone_bricks",
+        "minecraft:granite",
+        "minecraft:granite_slab",
+        "minecraft:granite_stairs",
+        "minecraft:granite_wall",
+        "minecraft:mossy_cobblestone",
+        "minecraft:mossy_cobblestone_slab",
+        "minecraft:mossy_cobblestone_stairs",
+        "minecraft:mossy_cobblestone_wall",
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:mossy_stone_brick_stairs",
+        "minecraft:mossy_stone_brick_wall",
+        "minecraft:mossy_stone_bricks",
+        "minecraft:mud_brick_slab",
+        "minecraft:mud_brick_stairs",
+        "minecraft:mud_brick_wall",
+        "minecraft:mud_bricks",
+        "minecraft:nether_brick_slab",
+        "minecraft:nether_brick_stairs",
+        "minecraft:nether_brick_wall",
+        "minecraft:nether_bricks",
+        "minecraft:polished_andesite",
+        "minecraft:polished_andesite_slab",
+        "minecraft:polished_andesite_stairs",
+        "minecraft:polished_basalt",
+        "minecraft:polished_blackstone",
+        "minecraft:polished_blackstone_brick_slab",
+        "minecraft:polished_blackstone_brick_stairs",
+        "minecraft:polished_blackstone_brick_wall",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:polished_blackstone_slab",
+        "minecraft:polished_blackstone_stairs",
+        "minecraft:polished_blackstone_wall",
+        "minecraft:polished_cinnabar",
+        "minecraft:polished_cinnabar_slab",
+        "minecraft:polished_cinnabar_stairs",
+        "minecraft:polished_cinnabar_wall",
+        "minecraft:polished_deepslate",
+        "minecraft:polished_deepslate_slab",
+        "minecraft:polished_deepslate_stairs",
+        "minecraft:polished_deepslate_wall",
+        "minecraft:polished_diorite",
+        "minecraft:polished_diorite_slab",
+        "minecraft:polished_diorite_stairs",
+        "minecraft:polished_granite",
+        "minecraft:polished_granite_slab",
+        "minecraft:polished_granite_stairs",
+        "minecraft:polished_sulfur",
+        "minecraft:polished_sulfur_slab",
+        "minecraft:polished_sulfur_stairs",
+        "minecraft:polished_sulfur_wall",
+        "minecraft:polished_tuff",
+        "minecraft:polished_tuff_slab",
+        "minecraft:polished_tuff_stairs",
+        "minecraft:polished_tuff_wall",
+        "minecraft:prismarine",
+        "minecraft:prismarine_brick_slab",
+        "minecraft:prismarine_brick_stairs",
+        "minecraft:prismarine_bricks",
+        "minecraft:prismarine_slab",
+        "minecraft:prismarine_stairs",
+        "minecraft:prismarine_wall",
+        "minecraft:purpur_block",
+        "minecraft:purpur_pillar",
+        "minecraft:purpur_slab",
+        "minecraft:purpur_stairs",
+        "minecraft:quartz_block",
+        "minecraft:quartz_bricks",
+        "minecraft:quartz_pillar",
+        "minecraft:quartz_slab",
+        "minecraft:quartz_stairs",
+        "minecraft:red_nether_brick_slab",
+        "minecraft:red_nether_brick_stairs",
+        "minecraft:red_nether_brick_wall",
+        "minecraft:red_nether_bricks",
+        "minecraft:red_sandstone",
+        "minecraft:red_sandstone_slab",
+        "minecraft:red_sandstone_stairs",
+        "minecraft:red_sandstone_wall",
+        "minecraft:resin_brick_slab",
+        "minecraft:resin_brick_stairs",
+        "minecraft:resin_brick_wall",
+        "minecraft:resin_bricks",
+        "minecraft:sandstone",
+        "minecraft:sandstone_slab",
+        "minecraft:sandstone_stairs",
+        "minecraft:sandstone_wall",
+        "minecraft:smooth_basalt",
+        "minecraft:smooth_quartz",
+        "minecraft:smooth_quartz_slab",
+        "minecraft:smooth_quartz_stairs",
+        "minecraft:smooth_red_sandstone",
+        "minecraft:smooth_red_sandstone_slab",
+        "minecraft:smooth_red_sandstone_stairs",
+        "minecraft:smooth_sandstone",
+        "minecraft:smooth_sandstone_slab",
+        "minecraft:smooth_sandstone_stairs",
+        "minecraft:smooth_stone",
+        "minecraft:smooth_stone_slab",
+        "minecraft:stone",
+        "minecraft:stone_brick_slab",
+        "minecraft:stone_brick_stairs",
+        "minecraft:stone_brick_wall",
+        "minecraft:stone_bricks",
+        "minecraft:stone_slab",
+        "minecraft:stone_stairs",
+        "minecraft:sulfur",
+        "minecraft:sulfur_brick_slab",
+        "minecraft:sulfur_brick_stairs",
+        "minecraft:sulfur_brick_wall",
+        "minecraft:sulfur_bricks",
+        "minecraft:sulfur_slab",
+        "minecraft:sulfur_stairs",
+        "minecraft:sulfur_wall",
+        "minecraft:tuff",
+        "minecraft:tuff_brick_slab",
+        "minecraft:tuff_brick_stairs",
+        "minecraft:tuff_brick_wall",
+        "minecraft:tuff_bricks",
+        "minecraft:tuff_slab",
+        "minecraft:tuff_stairs",
+        "minecraft:tuff_wall"
+      ]
+    },
+    {
+      "id": "stone.shape.full",
+      "title": "完整石材（跨石材系列）",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite",
+        "minecraft:basalt",
+        "minecraft:blackstone",
+        "minecraft:bricks",
+        "minecraft:chiseled_cinnabar",
+        "minecraft:chiseled_deepslate",
+        "minecraft:chiseled_nether_bricks",
+        "minecraft:chiseled_polished_blackstone",
+        "minecraft:chiseled_quartz_block",
+        "minecraft:chiseled_red_sandstone",
+        "minecraft:chiseled_resin_bricks",
+        "minecraft:chiseled_sandstone",
+        "minecraft:chiseled_stone_bricks",
+        "minecraft:chiseled_sulfur",
+        "minecraft:chiseled_tuff",
+        "minecraft:chiseled_tuff_bricks",
+        "minecraft:cinnabar",
+        "minecraft:cinnabar_bricks",
+        "minecraft:cobbled_deepslate",
+        "minecraft:cobblestone",
+        "minecraft:cracked_deepslate_bricks",
+        "minecraft:cracked_deepslate_tiles",
+        "minecraft:cracked_nether_bricks",
+        "minecraft:cracked_polished_blackstone_bricks",
+        "minecraft:cracked_stone_bricks",
+        "minecraft:cut_red_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_prismarine",
+        "minecraft:deepslate",
+        "minecraft:deepslate_bricks",
+        "minecraft:deepslate_tiles",
+        "minecraft:diorite",
+        "minecraft:end_stone",
+        "minecraft:end_stone_bricks",
+        "minecraft:granite",
+        "minecraft:mossy_cobblestone",
+        "minecraft:mossy_stone_bricks",
+        "minecraft:mud_bricks",
+        "minecraft:nether_bricks",
+        "minecraft:polished_andesite",
+        "minecraft:polished_basalt",
+        "minecraft:polished_blackstone",
+        "minecraft:polished_blackstone_bricks",
+        "minecraft:polished_cinnabar",
+        "minecraft:polished_deepslate",
+        "minecraft:polished_diorite",
+        "minecraft:polished_granite",
+        "minecraft:polished_sulfur",
+        "minecraft:polished_tuff",
+        "minecraft:prismarine",
+        "minecraft:prismarine_bricks",
+        "minecraft:purpur_block",
+        "minecraft:purpur_pillar",
+        "minecraft:quartz_block",
+        "minecraft:quartz_bricks",
+        "minecraft:quartz_pillar",
+        "minecraft:red_nether_bricks",
+        "minecraft:red_sandstone",
+        "minecraft:resin_bricks",
+        "minecraft:sandstone",
+        "minecraft:smooth_basalt",
+        "minecraft:smooth_quartz",
+        "minecraft:smooth_red_sandstone",
+        "minecraft:smooth_sandstone",
+        "minecraft:smooth_stone",
+        "minecraft:stone",
+        "minecraft:stone_bricks",
+        "minecraft:sulfur",
+        "minecraft:sulfur_bricks",
+        "minecraft:tuff",
+        "minecraft:tuff_bricks"
+      ]
+    },
+    {
+      "id": "stone.shape.stairs",
+      "title": "石材楼梯（跨石材系列）",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite_stairs",
+        "minecraft:blackstone_stairs",
+        "minecraft:brick_stairs",
+        "minecraft:cinnabar_brick_stairs",
+        "minecraft:cinnabar_stairs",
+        "minecraft:cobbled_deepslate_stairs",
+        "minecraft:cobblestone_stairs",
+        "minecraft:dark_prismarine_stairs",
+        "minecraft:deepslate_brick_stairs",
+        "minecraft:deepslate_tile_stairs",
+        "minecraft:diorite_stairs",
+        "minecraft:end_stone_brick_stairs",
+        "minecraft:granite_stairs",
+        "minecraft:mossy_cobblestone_stairs",
+        "minecraft:mossy_stone_brick_stairs",
+        "minecraft:mud_brick_stairs",
+        "minecraft:nether_brick_stairs",
+        "minecraft:polished_andesite_stairs",
+        "minecraft:polished_blackstone_brick_stairs",
+        "minecraft:polished_blackstone_stairs",
+        "minecraft:polished_cinnabar_stairs",
+        "minecraft:polished_deepslate_stairs",
+        "minecraft:polished_diorite_stairs",
+        "minecraft:polished_granite_stairs",
+        "minecraft:polished_sulfur_stairs",
+        "minecraft:polished_tuff_stairs",
+        "minecraft:prismarine_brick_stairs",
+        "minecraft:prismarine_stairs",
+        "minecraft:purpur_stairs",
+        "minecraft:quartz_stairs",
+        "minecraft:red_nether_brick_stairs",
+        "minecraft:red_sandstone_stairs",
+        "minecraft:resin_brick_stairs",
+        "minecraft:sandstone_stairs",
+        "minecraft:smooth_quartz_stairs",
+        "minecraft:smooth_red_sandstone_stairs",
+        "minecraft:smooth_sandstone_stairs",
+        "minecraft:stone_brick_stairs",
+        "minecraft:stone_stairs",
+        "minecraft:sulfur_brick_stairs",
+        "minecraft:sulfur_stairs",
+        "minecraft:tuff_brick_stairs",
+        "minecraft:tuff_stairs"
+      ]
+    },
+    {
+      "id": "stone.shape.slab",
+      "title": "石材半砖（跨石材系列）",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite_slab",
+        "minecraft:blackstone_slab",
+        "minecraft:brick_slab",
+        "minecraft:cinnabar_brick_slab",
+        "minecraft:cinnabar_slab",
+        "minecraft:cobbled_deepslate_slab",
+        "minecraft:cobblestone_slab",
+        "minecraft:cut_red_sandstone_slab",
+        "minecraft:cut_sandstone_slab",
+        "minecraft:dark_prismarine_slab",
+        "minecraft:deepslate_brick_slab",
+        "minecraft:deepslate_tile_slab",
+        "minecraft:diorite_slab",
+        "minecraft:end_stone_brick_slab",
+        "minecraft:granite_slab",
+        "minecraft:mossy_cobblestone_slab",
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:mud_brick_slab",
+        "minecraft:nether_brick_slab",
+        "minecraft:polished_andesite_slab",
+        "minecraft:polished_blackstone_brick_slab",
+        "minecraft:polished_blackstone_slab",
+        "minecraft:polished_cinnabar_slab",
+        "minecraft:polished_deepslate_slab",
+        "minecraft:polished_diorite_slab",
+        "minecraft:polished_granite_slab",
+        "minecraft:polished_sulfur_slab",
+        "minecraft:polished_tuff_slab",
+        "minecraft:prismarine_brick_slab",
+        "minecraft:prismarine_slab",
+        "minecraft:purpur_slab",
+        "minecraft:quartz_slab",
+        "minecraft:red_nether_brick_slab",
+        "minecraft:red_sandstone_slab",
+        "minecraft:resin_brick_slab",
+        "minecraft:sandstone_slab",
+        "minecraft:smooth_quartz_slab",
+        "minecraft:smooth_red_sandstone_slab",
+        "minecraft:smooth_sandstone_slab",
+        "minecraft:smooth_stone_slab",
+        "minecraft:stone_brick_slab",
+        "minecraft:stone_slab",
+        "minecraft:sulfur_brick_slab",
+        "minecraft:sulfur_slab",
+        "minecraft:tuff_brick_slab",
+        "minecraft:tuff_slab"
+      ]
+    },
+    {
+      "id": "stone.shape.wall",
+      "title": "石材墙（跨石材系列）",
+      "category": "石材",
+      "members": [
+        "minecraft:andesite_wall",
+        "minecraft:blackstone_wall",
+        "minecraft:brick_wall",
+        "minecraft:cinnabar_brick_wall",
+        "minecraft:cinnabar_wall",
+        "minecraft:cobbled_deepslate_wall",
+        "minecraft:cobblestone_wall",
+        "minecraft:deepslate_brick_wall",
+        "minecraft:deepslate_tile_wall",
+        "minecraft:diorite_wall",
+        "minecraft:end_stone_brick_wall",
+        "minecraft:granite_wall",
+        "minecraft:mossy_cobblestone_wall",
+        "minecraft:mossy_stone_brick_wall",
+        "minecraft:mud_brick_wall",
+        "minecraft:nether_brick_wall",
+        "minecraft:polished_blackstone_brick_wall",
+        "minecraft:polished_blackstone_wall",
+        "minecraft:polished_cinnabar_wall",
+        "minecraft:polished_deepslate_wall",
+        "minecraft:polished_sulfur_wall",
+        "minecraft:polished_tuff_wall",
+        "minecraft:prismarine_wall",
+        "minecraft:red_nether_brick_wall",
+        "minecraft:red_sandstone_wall",
+        "minecraft:resin_brick_wall",
+        "minecraft:sandstone_wall",
+        "minecraft:stone_brick_wall",
+        "minecraft:sulfur_brick_wall",
+        "minecraft:sulfur_wall",
+        "minecraft:tuff_brick_wall",
+        "minecraft:tuff_wall"
+      ]
+    },
+    {
+      "id": "shape.stairs",
+      "title": "所有楼梯（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:acacia_stairs",
+        "minecraft:andesite_stairs",
+        "minecraft:bamboo_mosaic_stairs",
+        "minecraft:bamboo_stairs",
+        "minecraft:birch_stairs",
+        "minecraft:black_concrete_stairs",
+        "minecraft:black_wool_stairs",
+        "minecraft:blackstone_stairs",
+        "minecraft:blue_concrete_stairs",
+        "minecraft:blue_wool_stairs",
+        "minecraft:brick_stairs",
+        "minecraft:brown_concrete_stairs",
+        "minecraft:brown_wool_stairs",
+        "minecraft:cherry_stairs",
+        "minecraft:cinnabar_brick_stairs",
+        "minecraft:cinnabar_stairs",
+        "minecraft:cobbled_deepslate_stairs",
+        "minecraft:cobblestone_stairs",
+        "minecraft:crimson_stairs",
+        "minecraft:cut_copper_stairs",
+        "minecraft:cyan_concrete_stairs",
+        "minecraft:cyan_wool_stairs",
+        "minecraft:dark_oak_stairs",
+        "minecraft:dark_prismarine_stairs",
+        "minecraft:deepslate_brick_stairs",
+        "minecraft:deepslate_tile_stairs",
+        "minecraft:diorite_stairs",
+        "minecraft:end_stone_brick_stairs",
+        "minecraft:exposed_cut_copper_stairs",
+        "minecraft:granite_stairs",
+        "minecraft:gray_concrete_stairs",
+        "minecraft:gray_wool_stairs",
+        "minecraft:green_concrete_stairs",
+        "minecraft:green_wool_stairs",
+        "minecraft:jungle_stairs",
+        "minecraft:light_blue_concrete_stairs",
+        "minecraft:light_blue_wool_stairs",
+        "minecraft:light_gray_concrete_stairs",
+        "minecraft:light_gray_wool_stairs",
+        "minecraft:lime_concrete_stairs",
+        "minecraft:lime_wool_stairs",
+        "minecraft:magenta_concrete_stairs",
+        "minecraft:magenta_wool_stairs",
+        "minecraft:mangrove_stairs",
+        "minecraft:mossy_cobblestone_stairs",
+        "minecraft:mossy_stone_brick_stairs",
+        "minecraft:mud_brick_stairs",
+        "minecraft:nether_brick_stairs",
+        "minecraft:oak_stairs",
+        "minecraft:orange_concrete_stairs",
+        "minecraft:orange_wool_stairs",
+        "minecraft:oxidized_cut_copper_stairs",
+        "minecraft:pale_oak_stairs",
+        "minecraft:pink_concrete_stairs",
+        "minecraft:pink_wool_stairs",
+        "minecraft:polished_andesite_stairs",
+        "minecraft:polished_blackstone_brick_stairs",
+        "minecraft:polished_blackstone_stairs",
+        "minecraft:polished_cinnabar_stairs",
+        "minecraft:polished_deepslate_stairs",
+        "minecraft:polished_diorite_stairs",
+        "minecraft:polished_granite_stairs",
+        "minecraft:polished_sulfur_stairs",
+        "minecraft:polished_tuff_stairs",
+        "minecraft:poplar_stairs",
+        "minecraft:prismarine_brick_stairs",
+        "minecraft:prismarine_stairs",
+        "minecraft:purple_concrete_stairs",
+        "minecraft:purple_wool_stairs",
+        "minecraft:purpur_stairs",
+        "minecraft:quartz_stairs",
+        "minecraft:red_concrete_stairs",
+        "minecraft:red_nether_brick_stairs",
+        "minecraft:red_sandstone_stairs",
+        "minecraft:red_wool_stairs",
+        "minecraft:resin_brick_stairs",
+        "minecraft:sandstone_stairs",
+        "minecraft:smooth_quartz_stairs",
+        "minecraft:smooth_red_sandstone_stairs",
+        "minecraft:smooth_sandstone_stairs",
+        "minecraft:spruce_stairs",
+        "minecraft:stone_brick_stairs",
+        "minecraft:stone_stairs",
+        "minecraft:sulfur_brick_stairs",
+        "minecraft:sulfur_stairs",
+        "minecraft:tuff_brick_stairs",
+        "minecraft:tuff_stairs",
+        "minecraft:warped_stairs",
+        "minecraft:waxed_cut_copper_stairs",
+        "minecraft:waxed_exposed_cut_copper_stairs",
+        "minecraft:waxed_oxidized_cut_copper_stairs",
+        "minecraft:waxed_weathered_cut_copper_stairs",
+        "minecraft:weathered_cut_copper_stairs",
+        "minecraft:white_concrete_stairs",
+        "minecraft:white_wool_stairs",
+        "minecraft:yellow_concrete_stairs",
+        "minecraft:yellow_wool_stairs"
+      ]
+    },
+    {
+      "id": "shape.slab",
+      "title": "所有半砖（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:acacia_slab",
+        "minecraft:andesite_slab",
+        "minecraft:bamboo_mosaic_slab",
+        "minecraft:bamboo_slab",
+        "minecraft:birch_slab",
+        "minecraft:black_concrete_slab",
+        "minecraft:black_wool_slab",
+        "minecraft:blackstone_slab",
+        "minecraft:blue_concrete_slab",
+        "minecraft:blue_wool_slab",
+        "minecraft:brick_slab",
+        "minecraft:brown_concrete_slab",
+        "minecraft:brown_wool_slab",
+        "minecraft:cherry_slab",
+        "minecraft:cinnabar_brick_slab",
+        "minecraft:cinnabar_slab",
+        "minecraft:cobbled_deepslate_slab",
+        "minecraft:cobblestone_slab",
+        "minecraft:crimson_slab",
+        "minecraft:cut_copper_slab",
+        "minecraft:cut_red_sandstone_slab",
+        "minecraft:cut_sandstone_slab",
+        "minecraft:cyan_concrete_slab",
+        "minecraft:cyan_wool_slab",
+        "minecraft:dark_oak_slab",
+        "minecraft:dark_prismarine_slab",
+        "minecraft:deepslate_brick_slab",
+        "minecraft:deepslate_tile_slab",
+        "minecraft:diorite_slab",
+        "minecraft:end_stone_brick_slab",
+        "minecraft:exposed_cut_copper_slab",
+        "minecraft:granite_slab",
+        "minecraft:gray_concrete_slab",
+        "minecraft:gray_wool_slab",
+        "minecraft:green_concrete_slab",
+        "minecraft:green_wool_slab",
+        "minecraft:jungle_slab",
+        "minecraft:light_blue_concrete_slab",
+        "minecraft:light_blue_wool_slab",
+        "minecraft:light_gray_concrete_slab",
+        "minecraft:light_gray_wool_slab",
+        "minecraft:lime_concrete_slab",
+        "minecraft:lime_wool_slab",
+        "minecraft:magenta_concrete_slab",
+        "minecraft:magenta_wool_slab",
+        "minecraft:mangrove_slab",
+        "minecraft:mossy_cobblestone_slab",
+        "minecraft:mossy_stone_brick_slab",
+        "minecraft:mud_brick_slab",
+        "minecraft:nether_brick_slab",
+        "minecraft:oak_slab",
+        "minecraft:orange_concrete_slab",
+        "minecraft:orange_wool_slab",
+        "minecraft:oxidized_cut_copper_slab",
+        "minecraft:pale_oak_slab",
+        "minecraft:petrified_oak_slab",
+        "minecraft:pink_concrete_slab",
+        "minecraft:pink_wool_slab",
+        "minecraft:polished_andesite_slab",
+        "minecraft:polished_blackstone_brick_slab",
+        "minecraft:polished_blackstone_slab",
+        "minecraft:polished_cinnabar_slab",
+        "minecraft:polished_deepslate_slab",
+        "minecraft:polished_diorite_slab",
+        "minecraft:polished_granite_slab",
+        "minecraft:polished_sulfur_slab",
+        "minecraft:polished_tuff_slab",
+        "minecraft:poplar_slab",
+        "minecraft:prismarine_brick_slab",
+        "minecraft:prismarine_slab",
+        "minecraft:purple_concrete_slab",
+        "minecraft:purple_wool_slab",
+        "minecraft:purpur_slab",
+        "minecraft:quartz_slab",
+        "minecraft:red_concrete_slab",
+        "minecraft:red_nether_brick_slab",
+        "minecraft:red_sandstone_slab",
+        "minecraft:red_wool_slab",
+        "minecraft:resin_brick_slab",
+        "minecraft:sandstone_slab",
+        "minecraft:smooth_quartz_slab",
+        "minecraft:smooth_red_sandstone_slab",
+        "minecraft:smooth_sandstone_slab",
+        "minecraft:smooth_stone_slab",
+        "minecraft:spruce_slab",
+        "minecraft:stone_brick_slab",
+        "minecraft:stone_slab",
+        "minecraft:sulfur_brick_slab",
+        "minecraft:sulfur_slab",
+        "minecraft:tuff_brick_slab",
+        "minecraft:tuff_slab",
+        "minecraft:warped_slab",
+        "minecraft:waxed_cut_copper_slab",
+        "minecraft:waxed_exposed_cut_copper_slab",
+        "minecraft:waxed_oxidized_cut_copper_slab",
+        "minecraft:waxed_weathered_cut_copper_slab",
+        "minecraft:weathered_cut_copper_slab",
+        "minecraft:white_concrete_slab",
+        "minecraft:white_wool_slab",
+        "minecraft:yellow_concrete_slab",
+        "minecraft:yellow_wool_slab"
+      ]
+    },
+    {
+      "id": "shape.wall",
+      "title": "所有墙（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:andesite_wall",
+        "minecraft:blackstone_wall",
+        "minecraft:brick_wall",
+        "minecraft:cinnabar_brick_wall",
+        "minecraft:cinnabar_wall",
+        "minecraft:cobbled_deepslate_wall",
+        "minecraft:cobblestone_wall",
+        "minecraft:deepslate_brick_wall",
+        "minecraft:deepslate_tile_wall",
+        "minecraft:diorite_wall",
+        "minecraft:end_stone_brick_wall",
+        "minecraft:granite_wall",
+        "minecraft:mossy_cobblestone_wall",
+        "minecraft:mossy_stone_brick_wall",
+        "minecraft:mud_brick_wall",
+        "minecraft:nether_brick_wall",
+        "minecraft:polished_blackstone_brick_wall",
+        "minecraft:polished_blackstone_wall",
+        "minecraft:polished_cinnabar_wall",
+        "minecraft:polished_deepslate_wall",
+        "minecraft:polished_sulfur_wall",
+        "minecraft:polished_tuff_wall",
+        "minecraft:prismarine_wall",
+        "minecraft:red_nether_brick_wall",
+        "minecraft:red_sandstone_wall",
+        "minecraft:resin_brick_wall",
+        "minecraft:sandstone_wall",
+        "minecraft:stone_brick_wall",
+        "minecraft:sulfur_brick_wall",
+        "minecraft:sulfur_wall",
+        "minecraft:tuff_brick_wall",
+        "minecraft:tuff_wall"
+      ]
+    },
+    {
+      "id": "shape.fence",
+      "title": "所有栅栏（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:acacia_fence",
+        "minecraft:bamboo_fence",
+        "minecraft:birch_fence",
+        "minecraft:cherry_fence",
+        "minecraft:crimson_fence",
+        "minecraft:dark_oak_fence",
+        "minecraft:jungle_fence",
+        "minecraft:mangrove_fence",
+        "minecraft:nether_brick_fence",
+        "minecraft:oak_fence",
+        "minecraft:pale_oak_fence",
+        "minecraft:poplar_fence",
+        "minecraft:spruce_fence",
+        "minecraft:warped_fence"
+      ]
+    },
+    {
+      "id": "shape.fence_gate",
+      "title": "所有栅栏门（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:acacia_fence_gate",
+        "minecraft:bamboo_fence_gate",
+        "minecraft:birch_fence_gate",
+        "minecraft:cherry_fence_gate",
+        "minecraft:crimson_fence_gate",
+        "minecraft:dark_oak_fence_gate",
+        "minecraft:jungle_fence_gate",
+        "minecraft:mangrove_fence_gate",
+        "minecraft:oak_fence_gate",
+        "minecraft:pale_oak_fence_gate",
+        "minecraft:poplar_fence_gate",
+        "minecraft:spruce_fence_gate",
+        "minecraft:warped_fence_gate"
+      ]
+    },
+    {
+      "id": "shape.door",
+      "title": "所有门（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:acacia_door",
+        "minecraft:bamboo_door",
+        "minecraft:birch_door",
+        "minecraft:cherry_door",
+        "minecraft:copper_door",
+        "minecraft:crimson_door",
+        "minecraft:dark_oak_door",
+        "minecraft:exposed_copper_door",
+        "minecraft:iron_door",
+        "minecraft:jungle_door",
+        "minecraft:mangrove_door",
+        "minecraft:oak_door",
+        "minecraft:oxidized_copper_door",
+        "minecraft:pale_oak_door",
+        "minecraft:poplar_door",
+        "minecraft:spruce_door",
+        "minecraft:warped_door",
+        "minecraft:waxed_copper_door",
+        "minecraft:waxed_exposed_copper_door",
+        "minecraft:waxed_oxidized_copper_door",
+        "minecraft:waxed_weathered_copper_door",
+        "minecraft:weathered_copper_door"
+      ]
+    },
+    {
+      "id": "shape.trapdoor",
+      "title": "所有活板门（跨材料）",
+      "category": "跨材料形状",
+      "members": [
+        "minecraft:acacia_trapdoor",
+        "minecraft:bamboo_trapdoor",
+        "minecraft:birch_trapdoor",
+        "minecraft:cherry_trapdoor",
+        "minecraft:copper_trapdoor",
+        "minecraft:crimson_trapdoor",
+        "minecraft:dark_oak_trapdoor",
+        "minecraft:exposed_copper_trapdoor",
+        "minecraft:iron_trapdoor",
+        "minecraft:jungle_trapdoor",
+        "minecraft:mangrove_trapdoor",
+        "minecraft:oak_trapdoor",
+        "minecraft:oxidized_copper_trapdoor",
+        "minecraft:pale_oak_trapdoor",
+        "minecraft:poplar_trapdoor",
+        "minecraft:spruce_trapdoor",
+        "minecraft:warped_trapdoor",
+        "minecraft:waxed_copper_trapdoor",
+        "minecraft:waxed_exposed_copper_trapdoor",
+        "minecraft:waxed_oxidized_copper_trapdoor",
+        "minecraft:waxed_weathered_copper_trapdoor",
+        "minecraft:weathered_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.oxidation.chiseled_copper.false",
+      "title": "铜氧化阶段 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:chiseled_copper",
+        "minecraft:exposed_chiseled_copper",
+        "minecraft:oxidized_chiseled_copper",
+        "minecraft:weathered_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.oxidation.chiseled_copper.true",
+      "title": "铜氧化阶段 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_chiseled_copper",
+        "minecraft:waxed_exposed_chiseled_copper",
+        "minecraft:waxed_oxidized_chiseled_copper",
+        "minecraft:waxed_weathered_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.chiseled_copper.fresh",
+      "title": "铜涂蜡差异 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:chiseled_copper",
+        "minecraft:waxed_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.chiseled_copper.exposed",
+      "title": "铜涂蜡差异 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_chiseled_copper",
+        "minecraft:waxed_exposed_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.chiseled_copper.weathered",
+      "title": "铜涂蜡差异 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_chiseled_copper",
+        "minecraft:weathered_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.chiseled_copper.oxidized",
+      "title": "铜涂蜡差异 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_chiseled_copper",
+        "minecraft:waxed_oxidized_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.combined.chiseled_copper",
+      "title": "铜氧化与涂蜡 / chiseled_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:chiseled_copper",
+        "minecraft:exposed_chiseled_copper",
+        "minecraft:oxidized_chiseled_copper",
+        "minecraft:waxed_chiseled_copper",
+        "minecraft:waxed_exposed_chiseled_copper",
+        "minecraft:waxed_oxidized_chiseled_copper",
+        "minecraft:waxed_weathered_chiseled_copper",
+        "minecraft:weathered_chiseled_copper"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_bars.false",
+      "title": "铜氧化阶段 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_bars",
+        "minecraft:exposed_copper_bars",
+        "minecraft:oxidized_copper_bars",
+        "minecraft:weathered_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_bars.true",
+      "title": "铜氧化阶段 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_bars",
+        "minecraft:waxed_exposed_copper_bars",
+        "minecraft:waxed_oxidized_copper_bars",
+        "minecraft:waxed_weathered_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bars.fresh",
+      "title": "铜涂蜡差异 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_bars",
+        "minecraft:waxed_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bars.exposed",
+      "title": "铜涂蜡差异 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_bars",
+        "minecraft:waxed_exposed_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bars.weathered",
+      "title": "铜涂蜡差异 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_bars",
+        "minecraft:weathered_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bars.oxidized",
+      "title": "铜涂蜡差异 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_bars",
+        "minecraft:waxed_oxidized_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_bars",
+      "title": "铜氧化与涂蜡 / copper_bars",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_bars",
+        "minecraft:exposed_copper_bars",
+        "minecraft:oxidized_copper_bars",
+        "minecraft:waxed_copper_bars",
+        "minecraft:waxed_exposed_copper_bars",
+        "minecraft:waxed_oxidized_copper_bars",
+        "minecraft:waxed_weathered_copper_bars",
+        "minecraft:weathered_copper_bars"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_block.false",
+      "title": "铜氧化阶段 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_block",
+        "minecraft:exposed_copper",
+        "minecraft:oxidized_copper",
+        "minecraft:weathered_copper"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_block.true",
+      "title": "铜氧化阶段 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_block",
+        "minecraft:waxed_exposed_copper",
+        "minecraft:waxed_oxidized_copper",
+        "minecraft:waxed_weathered_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_block.fresh",
+      "title": "铜涂蜡差异 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_block",
+        "minecraft:waxed_copper_block"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_block.exposed",
+      "title": "铜涂蜡差异 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper",
+        "minecraft:waxed_exposed_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_block.weathered",
+      "title": "铜涂蜡差异 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper",
+        "minecraft:weathered_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_block.oxidized",
+      "title": "铜涂蜡差异 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper",
+        "minecraft:waxed_oxidized_copper"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_block",
+      "title": "铜氧化与涂蜡 / copper_block",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_block",
+        "minecraft:exposed_copper",
+        "minecraft:oxidized_copper",
+        "minecraft:waxed_copper_block",
+        "minecraft:waxed_exposed_copper",
+        "minecraft:waxed_oxidized_copper",
+        "minecraft:waxed_weathered_copper",
+        "minecraft:weathered_copper"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_bulb.false",
+      "title": "铜氧化阶段 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_bulb",
+        "minecraft:exposed_copper_bulb",
+        "minecraft:oxidized_copper_bulb",
+        "minecraft:weathered_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_bulb.true",
+      "title": "铜氧化阶段 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_bulb",
+        "minecraft:waxed_exposed_copper_bulb",
+        "minecraft:waxed_oxidized_copper_bulb",
+        "minecraft:waxed_weathered_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bulb.fresh",
+      "title": "铜涂蜡差异 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_bulb",
+        "minecraft:waxed_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bulb.exposed",
+      "title": "铜涂蜡差异 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_bulb",
+        "minecraft:waxed_exposed_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bulb.weathered",
+      "title": "铜涂蜡差异 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_bulb",
+        "minecraft:weathered_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_bulb.oxidized",
+      "title": "铜涂蜡差异 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_bulb",
+        "minecraft:waxed_oxidized_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_bulb",
+      "title": "铜氧化与涂蜡 / copper_bulb",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_bulb",
+        "minecraft:exposed_copper_bulb",
+        "minecraft:oxidized_copper_bulb",
+        "minecraft:waxed_copper_bulb",
+        "minecraft:waxed_exposed_copper_bulb",
+        "minecraft:waxed_oxidized_copper_bulb",
+        "minecraft:waxed_weathered_copper_bulb",
+        "minecraft:weathered_copper_bulb"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_chain.false",
+      "title": "铜氧化阶段 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_chain",
+        "minecraft:exposed_copper_chain",
+        "minecraft:oxidized_copper_chain",
+        "minecraft:weathered_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_chain.true",
+      "title": "铜氧化阶段 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_chain",
+        "minecraft:waxed_exposed_copper_chain",
+        "minecraft:waxed_oxidized_copper_chain",
+        "minecraft:waxed_weathered_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chain.fresh",
+      "title": "铜涂蜡差异 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_chain",
+        "minecraft:waxed_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chain.exposed",
+      "title": "铜涂蜡差异 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_chain",
+        "minecraft:waxed_exposed_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chain.weathered",
+      "title": "铜涂蜡差异 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_chain",
+        "minecraft:weathered_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chain.oxidized",
+      "title": "铜涂蜡差异 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_chain",
+        "minecraft:waxed_oxidized_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_chain",
+      "title": "铜氧化与涂蜡 / copper_chain",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_chain",
+        "minecraft:exposed_copper_chain",
+        "minecraft:oxidized_copper_chain",
+        "minecraft:waxed_copper_chain",
+        "minecraft:waxed_exposed_copper_chain",
+        "minecraft:waxed_oxidized_copper_chain",
+        "minecraft:waxed_weathered_copper_chain",
+        "minecraft:weathered_copper_chain"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_chest.false",
+      "title": "铜氧化阶段 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_chest",
+        "minecraft:exposed_copper_chest",
+        "minecraft:oxidized_copper_chest",
+        "minecraft:weathered_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_chest.true",
+      "title": "铜氧化阶段 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_chest",
+        "minecraft:waxed_exposed_copper_chest",
+        "minecraft:waxed_oxidized_copper_chest",
+        "minecraft:waxed_weathered_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chest.fresh",
+      "title": "铜涂蜡差异 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_chest",
+        "minecraft:waxed_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chest.exposed",
+      "title": "铜涂蜡差异 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_chest",
+        "minecraft:waxed_exposed_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chest.weathered",
+      "title": "铜涂蜡差异 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_chest",
+        "minecraft:weathered_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_chest.oxidized",
+      "title": "铜涂蜡差异 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_chest",
+        "minecraft:waxed_oxidized_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_chest",
+      "title": "铜氧化与涂蜡 / copper_chest",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_chest",
+        "minecraft:exposed_copper_chest",
+        "minecraft:oxidized_copper_chest",
+        "minecraft:waxed_copper_chest",
+        "minecraft:waxed_exposed_copper_chest",
+        "minecraft:waxed_oxidized_copper_chest",
+        "minecraft:waxed_weathered_copper_chest",
+        "minecraft:weathered_copper_chest"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_door.false",
+      "title": "铜氧化阶段 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_door",
+        "minecraft:exposed_copper_door",
+        "minecraft:oxidized_copper_door",
+        "minecraft:weathered_copper_door"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_door.true",
+      "title": "铜氧化阶段 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_door",
+        "minecraft:waxed_exposed_copper_door",
+        "minecraft:waxed_oxidized_copper_door",
+        "minecraft:waxed_weathered_copper_door"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_door.fresh",
+      "title": "铜涂蜡差异 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_door",
+        "minecraft:waxed_copper_door"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_door.exposed",
+      "title": "铜涂蜡差异 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_door",
+        "minecraft:waxed_exposed_copper_door"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_door.weathered",
+      "title": "铜涂蜡差异 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_door",
+        "minecraft:weathered_copper_door"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_door.oxidized",
+      "title": "铜涂蜡差异 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_door",
+        "minecraft:waxed_oxidized_copper_door"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_door",
+      "title": "铜氧化与涂蜡 / copper_door",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_door",
+        "minecraft:exposed_copper_door",
+        "minecraft:oxidized_copper_door",
+        "minecraft:waxed_copper_door",
+        "minecraft:waxed_exposed_copper_door",
+        "minecraft:waxed_oxidized_copper_door",
+        "minecraft:waxed_weathered_copper_door",
+        "minecraft:weathered_copper_door"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_golem_statue.false",
+      "title": "铜氧化阶段 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_golem_statue",
+        "minecraft:exposed_copper_golem_statue",
+        "minecraft:oxidized_copper_golem_statue",
+        "minecraft:weathered_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_golem_statue.true",
+      "title": "铜氧化阶段 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_golem_statue",
+        "minecraft:waxed_exposed_copper_golem_statue",
+        "minecraft:waxed_oxidized_copper_golem_statue",
+        "minecraft:waxed_weathered_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_golem_statue.fresh",
+      "title": "铜涂蜡差异 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_golem_statue",
+        "minecraft:waxed_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_golem_statue.exposed",
+      "title": "铜涂蜡差异 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_golem_statue",
+        "minecraft:waxed_exposed_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_golem_statue.weathered",
+      "title": "铜涂蜡差异 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_golem_statue",
+        "minecraft:weathered_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_golem_statue.oxidized",
+      "title": "铜涂蜡差异 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_golem_statue",
+        "minecraft:waxed_oxidized_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_golem_statue",
+      "title": "铜氧化与涂蜡 / copper_golem_statue",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_golem_statue",
+        "minecraft:exposed_copper_golem_statue",
+        "minecraft:oxidized_copper_golem_statue",
+        "minecraft:waxed_copper_golem_statue",
+        "minecraft:waxed_exposed_copper_golem_statue",
+        "minecraft:waxed_oxidized_copper_golem_statue",
+        "minecraft:waxed_weathered_copper_golem_statue",
+        "minecraft:weathered_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_grate.false",
+      "title": "铜氧化阶段 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_grate",
+        "minecraft:exposed_copper_grate",
+        "minecraft:oxidized_copper_grate",
+        "minecraft:weathered_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_grate.true",
+      "title": "铜氧化阶段 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_grate",
+        "minecraft:waxed_exposed_copper_grate",
+        "minecraft:waxed_oxidized_copper_grate",
+        "minecraft:waxed_weathered_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_grate.fresh",
+      "title": "铜涂蜡差异 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_grate",
+        "minecraft:waxed_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_grate.exposed",
+      "title": "铜涂蜡差异 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_grate",
+        "minecraft:waxed_exposed_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_grate.weathered",
+      "title": "铜涂蜡差异 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_grate",
+        "minecraft:weathered_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_grate.oxidized",
+      "title": "铜涂蜡差异 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_grate",
+        "minecraft:waxed_oxidized_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_grate",
+      "title": "铜氧化与涂蜡 / copper_grate",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_grate",
+        "minecraft:exposed_copper_grate",
+        "minecraft:oxidized_copper_grate",
+        "minecraft:waxed_copper_grate",
+        "minecraft:waxed_exposed_copper_grate",
+        "minecraft:waxed_oxidized_copper_grate",
+        "minecraft:waxed_weathered_copper_grate",
+        "minecraft:weathered_copper_grate"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_lantern.false",
+      "title": "铜氧化阶段 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_lantern",
+        "minecraft:exposed_copper_lantern",
+        "minecraft:oxidized_copper_lantern",
+        "minecraft:weathered_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_lantern.true",
+      "title": "铜氧化阶段 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_lantern",
+        "minecraft:waxed_exposed_copper_lantern",
+        "minecraft:waxed_oxidized_copper_lantern",
+        "minecraft:waxed_weathered_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_lantern.fresh",
+      "title": "铜涂蜡差异 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_lantern",
+        "minecraft:waxed_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_lantern.exposed",
+      "title": "铜涂蜡差异 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_lantern",
+        "minecraft:waxed_exposed_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_lantern.weathered",
+      "title": "铜涂蜡差异 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_lantern",
+        "minecraft:weathered_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_lantern.oxidized",
+      "title": "铜涂蜡差异 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_lantern",
+        "minecraft:waxed_oxidized_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_lantern",
+      "title": "铜氧化与涂蜡 / copper_lantern",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_lantern",
+        "minecraft:exposed_copper_lantern",
+        "minecraft:oxidized_copper_lantern",
+        "minecraft:waxed_copper_lantern",
+        "minecraft:waxed_exposed_copper_lantern",
+        "minecraft:waxed_oxidized_copper_lantern",
+        "minecraft:waxed_weathered_copper_lantern",
+        "minecraft:weathered_copper_lantern"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_trapdoor.false",
+      "title": "铜氧化阶段 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_trapdoor",
+        "minecraft:exposed_copper_trapdoor",
+        "minecraft:oxidized_copper_trapdoor",
+        "minecraft:weathered_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.oxidation.copper_trapdoor.true",
+      "title": "铜氧化阶段 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_copper_trapdoor",
+        "minecraft:waxed_exposed_copper_trapdoor",
+        "minecraft:waxed_oxidized_copper_trapdoor",
+        "minecraft:waxed_weathered_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_trapdoor.fresh",
+      "title": "铜涂蜡差异 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_trapdoor",
+        "minecraft:waxed_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_trapdoor.exposed",
+      "title": "铜涂蜡差异 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_copper_trapdoor",
+        "minecraft:waxed_exposed_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_trapdoor.weathered",
+      "title": "铜涂蜡差异 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_copper_trapdoor",
+        "minecraft:weathered_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.wax.copper_trapdoor.oxidized",
+      "title": "铜涂蜡差异 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_copper_trapdoor",
+        "minecraft:waxed_oxidized_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.combined.copper_trapdoor",
+      "title": "铜氧化与涂蜡 / copper_trapdoor",
+      "category": "铜材",
+      "members": [
+        "minecraft:copper_trapdoor",
+        "minecraft:exposed_copper_trapdoor",
+        "minecraft:oxidized_copper_trapdoor",
+        "minecraft:waxed_copper_trapdoor",
+        "minecraft:waxed_exposed_copper_trapdoor",
+        "minecraft:waxed_oxidized_copper_trapdoor",
+        "minecraft:waxed_weathered_copper_trapdoor",
+        "minecraft:weathered_copper_trapdoor"
+      ]
+    },
+    {
+      "id": "copper.oxidation.cut_copper.false",
+      "title": "铜氧化阶段 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper",
+        "minecraft:exposed_cut_copper",
+        "minecraft:oxidized_cut_copper",
+        "minecraft:weathered_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.oxidation.cut_copper.true",
+      "title": "铜氧化阶段 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_cut_copper",
+        "minecraft:waxed_exposed_cut_copper",
+        "minecraft:waxed_oxidized_cut_copper",
+        "minecraft:waxed_weathered_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper.fresh",
+      "title": "铜涂蜡差异 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper",
+        "minecraft:waxed_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper.exposed",
+      "title": "铜涂蜡差异 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_cut_copper",
+        "minecraft:waxed_exposed_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper.weathered",
+      "title": "铜涂蜡差异 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_cut_copper",
+        "minecraft:weathered_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper.oxidized",
+      "title": "铜涂蜡差异 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_cut_copper",
+        "minecraft:waxed_oxidized_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.combined.cut_copper",
+      "title": "铜氧化与涂蜡 / cut_copper",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper",
+        "minecraft:exposed_cut_copper",
+        "minecraft:oxidized_cut_copper",
+        "minecraft:waxed_cut_copper",
+        "minecraft:waxed_exposed_cut_copper",
+        "minecraft:waxed_oxidized_cut_copper",
+        "minecraft:waxed_weathered_cut_copper",
+        "minecraft:weathered_cut_copper"
+      ]
+    },
+    {
+      "id": "copper.oxidation.cut_copper_slab.false",
+      "title": "铜氧化阶段 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper_slab",
+        "minecraft:exposed_cut_copper_slab",
+        "minecraft:oxidized_cut_copper_slab",
+        "minecraft:weathered_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.oxidation.cut_copper_slab.true",
+      "title": "铜氧化阶段 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_cut_copper_slab",
+        "minecraft:waxed_exposed_cut_copper_slab",
+        "minecraft:waxed_oxidized_cut_copper_slab",
+        "minecraft:waxed_weathered_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_slab.fresh",
+      "title": "铜涂蜡差异 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper_slab",
+        "minecraft:waxed_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_slab.exposed",
+      "title": "铜涂蜡差异 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_cut_copper_slab",
+        "minecraft:waxed_exposed_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_slab.weathered",
+      "title": "铜涂蜡差异 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_cut_copper_slab",
+        "minecraft:weathered_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_slab.oxidized",
+      "title": "铜涂蜡差异 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_cut_copper_slab",
+        "minecraft:waxed_oxidized_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.combined.cut_copper_slab",
+      "title": "铜氧化与涂蜡 / cut_copper_slab",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper_slab",
+        "minecraft:exposed_cut_copper_slab",
+        "minecraft:oxidized_cut_copper_slab",
+        "minecraft:waxed_cut_copper_slab",
+        "minecraft:waxed_exposed_cut_copper_slab",
+        "minecraft:waxed_oxidized_cut_copper_slab",
+        "minecraft:waxed_weathered_cut_copper_slab",
+        "minecraft:weathered_cut_copper_slab"
+      ]
+    },
+    {
+      "id": "copper.oxidation.cut_copper_stairs.false",
+      "title": "铜氧化阶段 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper_stairs",
+        "minecraft:exposed_cut_copper_stairs",
+        "minecraft:oxidized_cut_copper_stairs",
+        "minecraft:weathered_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.oxidation.cut_copper_stairs.true",
+      "title": "铜氧化阶段 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_cut_copper_stairs",
+        "minecraft:waxed_exposed_cut_copper_stairs",
+        "minecraft:waxed_oxidized_cut_copper_stairs",
+        "minecraft:waxed_weathered_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_stairs.fresh",
+      "title": "铜涂蜡差异 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper_stairs",
+        "minecraft:waxed_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_stairs.exposed",
+      "title": "铜涂蜡差异 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_cut_copper_stairs",
+        "minecraft:waxed_exposed_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_stairs.weathered",
+      "title": "铜涂蜡差异 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_cut_copper_stairs",
+        "minecraft:weathered_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.wax.cut_copper_stairs.oxidized",
+      "title": "铜涂蜡差异 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_cut_copper_stairs",
+        "minecraft:waxed_oxidized_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.combined.cut_copper_stairs",
+      "title": "铜氧化与涂蜡 / cut_copper_stairs",
+      "category": "铜材",
+      "members": [
+        "minecraft:cut_copper_stairs",
+        "minecraft:exposed_cut_copper_stairs",
+        "minecraft:oxidized_cut_copper_stairs",
+        "minecraft:waxed_cut_copper_stairs",
+        "minecraft:waxed_exposed_cut_copper_stairs",
+        "minecraft:waxed_oxidized_cut_copper_stairs",
+        "minecraft:waxed_weathered_cut_copper_stairs",
+        "minecraft:weathered_cut_copper_stairs"
+      ]
+    },
+    {
+      "id": "copper.oxidation.lightning_rod.false",
+      "title": "铜氧化阶段 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_lightning_rod",
+        "minecraft:lightning_rod",
+        "minecraft:oxidized_lightning_rod",
+        "minecraft:weathered_lightning_rod"
+      ]
+    },
+    {
+      "id": "copper.oxidation.lightning_rod.true",
+      "title": "铜氧化阶段 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_exposed_lightning_rod",
+        "minecraft:waxed_lightning_rod",
+        "minecraft:waxed_oxidized_lightning_rod",
+        "minecraft:waxed_weathered_lightning_rod"
+      ]
+    },
+    {
+      "id": "copper.wax.lightning_rod.fresh",
+      "title": "铜涂蜡差异 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:lightning_rod",
+        "minecraft:waxed_lightning_rod"
+      ]
+    },
+    {
+      "id": "copper.wax.lightning_rod.exposed",
+      "title": "铜涂蜡差异 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_lightning_rod",
+        "minecraft:waxed_exposed_lightning_rod"
+      ]
+    },
+    {
+      "id": "copper.wax.lightning_rod.weathered",
+      "title": "铜涂蜡差异 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:waxed_weathered_lightning_rod",
+        "minecraft:weathered_lightning_rod"
+      ]
+    },
+    {
+      "id": "copper.wax.lightning_rod.oxidized",
+      "title": "铜涂蜡差异 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:oxidized_lightning_rod",
+        "minecraft:waxed_oxidized_lightning_rod"
+      ]
+    },
+    {
+      "id": "copper.combined.lightning_rod",
+      "title": "铜氧化与涂蜡 / lightning_rod",
+      "category": "铜材",
+      "members": [
+        "minecraft:exposed_lightning_rod",
+        "minecraft:lightning_rod",
+        "minecraft:oxidized_lightning_rod",
+        "minecraft:waxed_exposed_lightning_rod",
+        "minecraft:waxed_lightning_rod",
+        "minecraft:waxed_oxidized_lightning_rod",
+        "minecraft:waxed_weathered_lightning_rod",
+        "minecraft:weathered_lightning_rod"
+      ]
+    },
+    {
+      "id": "nature.leaves",
+      "title": "所有树叶",
+      "category": "自然",
+      "members": [
+        "minecraft:acacia_leaves",
+        "minecraft:azalea_leaves",
+        "minecraft:birch_leaves",
+        "minecraft:cherry_leaves",
+        "minecraft:dark_oak_leaves",
+        "minecraft:flowering_azalea_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:mangrove_leaves",
+        "minecraft:oak_leaves",
+        "minecraft:orange_poplar_leaves",
+        "minecraft:pale_oak_leaves",
+        "minecraft:red_poplar_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:yellow_poplar_leaves"
+      ]
+    },
+    {
+      "id": "nature.poplar_leaves",
+      "title": "杨木叶颜色",
+      "category": "自然",
+      "members": [
+        "minecraft:orange_poplar_leaves",
+        "minecraft:red_poplar_leaves",
+        "minecraft:yellow_poplar_leaves"
+      ]
+    },
+    {
+      "id": "nature.sapling",
+      "title": "树苗",
+      "category": "自然",
+      "members": [
+        "minecraft:acacia_sapling",
+        "minecraft:bamboo_sapling",
+        "minecraft:birch_sapling",
+        "minecraft:cherry_sapling",
+        "minecraft:dark_oak_sapling",
+        "minecraft:jungle_sapling",
+        "minecraft:oak_sapling",
+        "minecraft:pale_oak_sapling",
+        "minecraft:poplar_sapling",
+        "minecraft:spruce_sapling"
+      ]
+    },
+    {
+      "id": "nature.potted",
+      "title": "盆栽植物",
+      "category": "自然",
+      "members": [
+        "minecraft:potted_acacia_sapling",
+        "minecraft:potted_allium",
+        "minecraft:potted_azalea_bush",
+        "minecraft:potted_azure_bluet",
+        "minecraft:potted_bamboo",
+        "minecraft:potted_birch_sapling",
+        "minecraft:potted_blue_orchid",
+        "minecraft:potted_brown_mushroom",
+        "minecraft:potted_cactus",
+        "minecraft:potted_cherry_sapling",
+        "minecraft:potted_closed_eyeblossom",
+        "minecraft:potted_cornflower",
+        "minecraft:potted_crimson_fungus",
+        "minecraft:potted_crimson_roots",
+        "minecraft:potted_dandelion",
+        "minecraft:potted_dark_oak_sapling",
+        "minecraft:potted_dead_bush",
+        "minecraft:potted_fern",
+        "minecraft:potted_flowering_azalea_bush",
+        "minecraft:potted_golden_dandelion",
+        "minecraft:potted_jungle_sapling",
+        "minecraft:potted_lily_of_the_valley",
+        "minecraft:potted_mangrove_propagule",
+        "minecraft:potted_oak_sapling",
+        "minecraft:potted_open_eyeblossom",
+        "minecraft:potted_orange_tulip",
+        "minecraft:potted_oxeye_daisy",
+        "minecraft:potted_pale_oak_sapling",
+        "minecraft:potted_pink_tulip",
+        "minecraft:potted_poplar_sapling",
+        "minecraft:potted_poppy",
+        "minecraft:potted_red_mushroom",
+        "minecraft:potted_red_tulip",
+        "minecraft:potted_spruce_sapling",
+        "minecraft:potted_torchflower",
+        "minecraft:potted_warped_fungus",
+        "minecraft:potted_warped_roots",
+        "minecraft:potted_white_tulip",
+        "minecraft:potted_wither_rose"
+      ]
+    },
+    {
+      "id": "nature.soil",
+      "title": "地面土壤",
+      "category": "自然",
+      "members": [
+        "minecraft:coarse_dirt",
+        "minecraft:dirt",
+        "minecraft:grass_block",
+        "minecraft:mud",
+        "minecraft:mycelium",
+        "minecraft:packed_mud",
+        "minecraft:podzol",
+        "minecraft:rooted_dirt"
+      ]
+    },
+    {
+      "id": "nature.sand",
+      "title": "沙与红沙",
+      "category": "自然",
+      "members": [
+        "minecraft:red_sand",
+        "minecraft:sand"
+      ]
+    },
+    {
+      "id": "nature.ice",
+      "title": "冰种类",
+      "category": "自然",
+      "members": [
+        "minecraft:blue_ice",
+        "minecraft:frosted_ice",
+        "minecraft:ice",
+        "minecraft:packed_ice"
+      ]
+    },
+    {
+      "id": "nature.sponge",
+      "title": "海绵干湿",
+      "category": "自然",
+      "members": [
+        "minecraft:sponge",
+        "minecraft:wet_sponge"
+      ]
+    },
+    {
+      "id": "nature.moss",
+      "title": "苔藓块",
+      "category": "自然",
+      "members": [
+        "minecraft:moss_block",
+        "minecraft:pale_moss_block"
+      ]
+    },
+    {
+      "id": "nature.moss_carpet",
+      "title": "苔藓地毯",
+      "category": "自然",
+      "members": [
+        "minecraft:moss_carpet",
+        "minecraft:pale_moss_carpet"
+      ]
+    },
+    {
+      "id": "nature.small_flowers",
+      "title": "单格花",
+      "category": "自然",
+      "members": [
+        "minecraft:allium",
+        "minecraft:azure_bluet",
+        "minecraft:blue_orchid",
+        "minecraft:cornflower",
+        "minecraft:dandelion",
+        "minecraft:golden_dandelion",
+        "minecraft:lily_of_the_valley",
+        "minecraft:orange_tulip",
+        "minecraft:oxeye_daisy",
+        "minecraft:pink_tulip",
+        "minecraft:poppy",
+        "minecraft:red_tulip",
+        "minecraft:torchflower",
+        "minecraft:white_tulip",
+        "minecraft:wither_rose"
+      ]
+    },
+    {
+      "id": "nature.tall_flowers",
+      "title": "双格花",
+      "category": "自然",
+      "members": [
+        "minecraft:lilac",
+        "minecraft:peony",
+        "minecraft:pitcher_plant",
+        "minecraft:rose_bush",
+        "minecraft:sunflower"
+      ]
+    },
+    {
+      "id": "nature.short_grass",
+      "title": "矮草与蕨",
+      "category": "自然",
+      "members": [
+        "minecraft:fern",
+        "minecraft:short_dry_grass",
+        "minecraft:short_grass"
+      ]
+    },
+    {
+      "id": "nature.tall_grass",
+      "title": "高草与大型蕨",
+      "category": "自然",
+      "members": [
+        "minecraft:large_fern",
+        "minecraft:tall_dry_grass",
+        "minecraft:tall_grass"
+      ]
+    },
+    {
+      "id": "nature.coral.False",
+      "title": "活珊瑚 / coral",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral",
+        "minecraft:bubble_coral",
+        "minecraft:fire_coral",
+        "minecraft:horn_coral",
+        "minecraft:tube_coral"
+      ]
+    },
+    {
+      "id": "nature.coral.True",
+      "title": "死珊瑚 / coral",
+      "category": "自然",
+      "members": [
+        "minecraft:dead_brain_coral",
+        "minecraft:dead_bubble_coral",
+        "minecraft:dead_fire_coral",
+        "minecraft:dead_horn_coral",
+        "minecraft:dead_tube_coral"
+      ]
+    },
+    {
+      "id": "nature.coral_life.coral",
+      "title": "珊瑚种类与死活 / coral",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral",
+        "minecraft:bubble_coral",
+        "minecraft:dead_brain_coral",
+        "minecraft:dead_bubble_coral",
+        "minecraft:dead_fire_coral",
+        "minecraft:dead_horn_coral",
+        "minecraft:dead_tube_coral",
+        "minecraft:fire_coral",
+        "minecraft:horn_coral",
+        "minecraft:tube_coral"
+      ]
+    },
+    {
+      "id": "nature.coral_block.False",
+      "title": "活珊瑚 / coral_block",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral_block",
+        "minecraft:bubble_coral_block",
+        "minecraft:fire_coral_block",
+        "minecraft:horn_coral_block",
+        "minecraft:tube_coral_block"
+      ]
+    },
+    {
+      "id": "nature.coral_block.True",
+      "title": "死珊瑚 / coral_block",
+      "category": "自然",
+      "members": [
+        "minecraft:dead_brain_coral_block",
+        "minecraft:dead_bubble_coral_block",
+        "minecraft:dead_fire_coral_block",
+        "minecraft:dead_horn_coral_block",
+        "minecraft:dead_tube_coral_block"
+      ]
+    },
+    {
+      "id": "nature.coral_life.coral_block",
+      "title": "珊瑚种类与死活 / coral_block",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral_block",
+        "minecraft:bubble_coral_block",
+        "minecraft:dead_brain_coral_block",
+        "minecraft:dead_bubble_coral_block",
+        "minecraft:dead_fire_coral_block",
+        "minecraft:dead_horn_coral_block",
+        "minecraft:dead_tube_coral_block",
+        "minecraft:fire_coral_block",
+        "minecraft:horn_coral_block",
+        "minecraft:tube_coral_block"
+      ]
+    },
+    {
+      "id": "nature.coral_fan.False",
+      "title": "活珊瑚 / coral_fan",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral_fan",
+        "minecraft:bubble_coral_fan",
+        "minecraft:fire_coral_fan",
+        "minecraft:horn_coral_fan",
+        "minecraft:tube_coral_fan"
+      ]
+    },
+    {
+      "id": "nature.coral_fan.True",
+      "title": "死珊瑚 / coral_fan",
+      "category": "自然",
+      "members": [
+        "minecraft:dead_brain_coral_fan",
+        "minecraft:dead_bubble_coral_fan",
+        "minecraft:dead_fire_coral_fan",
+        "minecraft:dead_horn_coral_fan",
+        "minecraft:dead_tube_coral_fan"
+      ]
+    },
+    {
+      "id": "nature.coral_life.coral_fan",
+      "title": "珊瑚种类与死活 / coral_fan",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral_fan",
+        "minecraft:bubble_coral_fan",
+        "minecraft:dead_brain_coral_fan",
+        "minecraft:dead_bubble_coral_fan",
+        "minecraft:dead_fire_coral_fan",
+        "minecraft:dead_horn_coral_fan",
+        "minecraft:dead_tube_coral_fan",
+        "minecraft:fire_coral_fan",
+        "minecraft:horn_coral_fan",
+        "minecraft:tube_coral_fan"
+      ]
+    },
+    {
+      "id": "nature.coral_wall_fan.False",
+      "title": "活珊瑚 / coral_wall_fan",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral_wall_fan",
+        "minecraft:bubble_coral_wall_fan",
+        "minecraft:fire_coral_wall_fan",
+        "minecraft:horn_coral_wall_fan",
+        "minecraft:tube_coral_wall_fan"
+      ]
+    },
+    {
+      "id": "nature.coral_wall_fan.True",
+      "title": "死珊瑚 / coral_wall_fan",
+      "category": "自然",
+      "members": [
+        "minecraft:dead_brain_coral_wall_fan",
+        "minecraft:dead_bubble_coral_wall_fan",
+        "minecraft:dead_fire_coral_wall_fan",
+        "minecraft:dead_horn_coral_wall_fan",
+        "minecraft:dead_tube_coral_wall_fan"
+      ]
+    },
+    {
+      "id": "nature.coral_life.coral_wall_fan",
+      "title": "珊瑚种类与死活 / coral_wall_fan",
+      "category": "自然",
+      "members": [
+        "minecraft:brain_coral_wall_fan",
+        "minecraft:bubble_coral_wall_fan",
+        "minecraft:dead_brain_coral_wall_fan",
+        "minecraft:dead_bubble_coral_wall_fan",
+        "minecraft:dead_fire_coral_wall_fan",
+        "minecraft:dead_horn_coral_wall_fan",
+        "minecraft:dead_tube_coral_wall_fan",
+        "minecraft:fire_coral_wall_fan",
+        "minecraft:horn_coral_wall_fan",
+        "minecraft:tube_coral_wall_fan"
+      ]
+    },
+    {
+      "id": "nature.ore.coal",
+      "title": "矿石基底 / coal",
+      "category": "自然",
+      "members": [
+        "minecraft:coal_ore",
+        "minecraft:deepslate_coal_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.iron",
+      "title": "矿石基底 / iron",
+      "category": "自然",
+      "members": [
+        "minecraft:deepslate_iron_ore",
+        "minecraft:iron_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.copper",
+      "title": "矿石基底 / copper",
+      "category": "自然",
+      "members": [
+        "minecraft:copper_ore",
+        "minecraft:deepslate_copper_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.gold",
+      "title": "矿石基底 / gold",
+      "category": "自然",
+      "members": [
+        "minecraft:deepslate_gold_ore",
+        "minecraft:gold_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.redstone",
+      "title": "矿石基底 / redstone",
+      "category": "自然",
+      "members": [
+        "minecraft:deepslate_redstone_ore",
+        "minecraft:redstone_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.lapis",
+      "title": "矿石基底 / lapis",
+      "category": "自然",
+      "members": [
+        "minecraft:deepslate_lapis_ore",
+        "minecraft:lapis_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.diamond",
+      "title": "矿石基底 / diamond",
+      "category": "自然",
+      "members": [
+        "minecraft:deepslate_diamond_ore",
+        "minecraft:diamond_ore"
+      ]
+    },
+    {
+      "id": "nature.ore.emerald",
+      "title": "矿石基底 / emerald",
+      "category": "自然",
+      "members": [
+        "minecraft:deepslate_emerald_ore",
+        "minecraft:emerald_ore"
+      ]
+    },
+    {
+      "id": "functional.anvil",
+      "title": "铁砧损坏程度",
+      "category": "功能",
+      "members": [
+        "minecraft:anvil",
+        "minecraft:chipped_anvil",
+        "minecraft:damaged_anvil"
+      ]
+    },
+    {
+      "id": "functional.froglight",
+      "title": "蛙明灯种类",
+      "category": "功能",
+      "members": [
+        "minecraft:ochre_froglight",
+        "minecraft:pearlescent_froglight",
+        "minecraft:verdant_froglight"
+      ]
+    },
+    {
+      "id": "functional.lighting",
+      "title": "完整照明方块",
+      "category": "功能",
+      "members": [
+        "minecraft:glowstone",
+        "minecraft:ochre_froglight",
+        "minecraft:pearlescent_froglight",
+        "minecraft:sea_lantern",
+        "minecraft:shroomlight",
+        "minecraft:verdant_froglight"
+      ]
+    },
+    {
+      "id": "functional.skull",
+      "title": "地面头颅",
+      "category": "功能",
+      "members": [
+        "minecraft:creeper_head",
+        "minecraft:dragon_head",
+        "minecraft:piglin_head",
+        "minecraft:piston_head",
+        "minecraft:player_head",
+        "minecraft:skeleton_skull",
+        "minecraft:wither_skeleton_skull",
+        "minecraft:zombie_head"
+      ]
+    },
+    {
+      "id": "functional.wall_skull",
+      "title": "墙式头颅",
+      "category": "功能",
+      "members": [
+        "minecraft:creeper_wall_head",
+        "minecraft:dragon_wall_head",
+        "minecraft:piglin_wall_head",
+        "minecraft:player_wall_head",
+        "minecraft:skeleton_wall_skull",
+        "minecraft:wither_skeleton_wall_skull",
+        "minecraft:zombie_wall_head"
+      ]
+    }
+  ]
+}

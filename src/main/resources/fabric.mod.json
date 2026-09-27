@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "litematica_flex",
+  "version": "${version}",
+  "name": "Litematica Flex Alpha ver.",
+  "description": "Composable material substitution rules for Litematica building, easy place and verification.",
+  "environment": "client",
+  "license": "MIT",
+  "entrypoints": {
+    "main": ["io.github.litematicaflex.FlexMod"]
+  },
+  "mixins": ["litematica_flex.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "litematica": ">=0.29.0 <0.30.0",
+    "malilib": ">=0.30.1 <0.31.0"
+  }
+}

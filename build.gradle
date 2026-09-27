@@ -1,0 +1,70 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.21'
+}
+
+group = 'io.github.litematicaflex'
+version = project.mod_version
+base { archivesName = "litematica-flex-${project.minecraft_version}" }
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+    maven { url = 'https://api.modrinth.com/maven' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation 'maven.modrinth:litematica:fEqsesPK'
+    implementation 'maven.modrinth:malilib:DPcJACN6'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.13.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(25) }
+    withSourcesJar()
+}
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+    options.encoding = 'UTF-8'
+}
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+test { useJUnitPlatform() }
+
+// The smoke harness is a separate development-only mod, never packaged in the production JAR.
+sourceSets {
+    smoke {
+        compileClasspath += sourceSets.main.runtimeClasspath
+        runtimeClasspath += sourceSets.main.runtimeClasspath
+    }
+}
+
+tasks.register('integrationSmoke', JavaExec) {
+    dependsOn classes, smokeClasses
+    doFirst {
+        file('build/smoke/mods').mkdirs()
+        file('build/resources/smoke').mkdirs()
+        def harness = file('build/smoke-harness')
+        harness.mkdirs()
+        new File(harness, 'fabric.mod.json').text = groovy.json.JsonOutput.toJson([
+            schemaVersion: 1, id: 'litematica_flex_smoke', version: '1', environment: 'client',
+            entrypoints: [preLaunch: ['io.github.litematicaflex.integration.IntegrationSmoke']]
+        ])
+        systemProperty 'fabric.addMods', harness.absolutePath
+    }
+    classpath = sourceSets.smoke.runtimeClasspath
+    mainClass = 'net.fabricmc.loader.impl.launch.knot.KnotClient'
+    systemProperty 'fabric.development', 'true'
+    systemProperty 'litematica.flex.smoke', 'true'
+    systemProperty 'fabric.gameVersion', project.minecraft_version
+    args '--version', project.minecraft_version, '--gameDir', file('build/smoke').absolutePath
+}
+
+// Includes Minecraft dependencies for integration smoke tests without changing production packaging.
+tasks.register('writeRuntimeClasspath') {
+    doLast { file('build/runtime-classpath.txt').text = sourceSets.main.runtimeClasspath.asPath }
+}
