@@ -4,7 +4,7 @@ Litematica Flex is a lightweight addon for Litematica that makes block matching 
 
 版本 **Alpha1.0.0**。Minecraft 26.3 客户端 Fabric 附加模组，依赖 Litematica 0.29.x、MaLiLib 0.30.x、Fabric Loader 0.19.5+ 和 Java 25。
 
-安装 `build/libs/litematica-flex-26.3-Alpha1.0.0.jar`，移走旧 Flex JAR。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
+安装 `build/libs/litematica-flex-26.3-Alpha1.0.0.jar`。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
 
 ## 设置与优先级
 
@@ -33,31 +33,3 @@ Litematica Flex is a lightweight addon for Litematica that makes block matching 
 - 容器与加工设备，包括所有潜影盒。
 
 可选冰/海绵/气泡柱材料及特殊功能方块预设。每个预设悬停可查看完整 ID；自定义列表每行一个注册名。GUI 验证注册名，配置文件允许未安装模组的合法 ID；这些 ID 在未注册时不会匹配。
-
-同一个 `config/litematica-flex.json` 包含全局、投影、区域和命名方案，无导出功能。例如在 `global` 中编辑：
-
-```json
-{
-  "blacklistEnabled": true,
-  "blacklistPresets": ["redstone", "moving", "obsidian", "containers"],
-  "blacklistBlocks": ["minecraft:oak_log", "minecraft:diamond_block"]
-}
-```
-
-这是字段示例，不应替换整个配置文件。旧 `strictBlocks` 继续始终生效，若存在会在黑名单页单独显示。保存使用临时文件和 `.bak`，外部编辑保护采用直接文本比较，无哈希检查。
-
-## 自定义与扩展
-
-`customGroups` 的每个注册名数组独立互认，不进行传递合并。`replacements` 为原理图 ID 到允许实际 ID 列表的定向映射。黑名单优先于两者。`temporaryTargets` 只标记已被规则接受的占位材料，不额外授权替换。
-
-旧 `wood.all` 转为独立木材小组，旧 `stone.all` 转为四种石材形状组。旧 `shape.*`、`broadRuleMode` 和 `allowFunctional` 不再参与匹配。
-
-扩展模组可通过 Fabric 的 `litematica-flex` 自定义 entrypoint 实现 `FlexExtension`，向 `FlexApi` 注册 `EquivalenceRule`；总开关、黑名单及统一限制先于扩展执行。
-
-## 验证
-
-使用 Java 25 执行 `./gradlew build integrationSmoke`。开发验证遍历 1,286 个注册方块、35,723 个状态、68,590 对预设成员和 826,255 对全部种类候选，并检查真实的渲染输入、黄色状态错误、物品选材、校验分类、全局关闭、全局黑名单和旧配置迁移。
-
-报告保存在 `build/reports/replacement-audit/`，测试入口不进入正式 JAR。这些检查不模拟完整游戏 GUI、鼠标操作或服务器放置。HUD 统计需要先在 Litematica 校验器运行校验。
-
-轻松放置兼容 Litematica 默认旧版路径和重写版路径，无需切换 `easyPlacePostRewrite`。测试分别执行两套路径实际注入的替代物品查询；完整点击、背包网络切换和服务器放置仍需游戏内复测。
