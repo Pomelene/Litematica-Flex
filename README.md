@@ -1,5 +1,7 @@
 # Litematica Flex Alpha ver.
 
+Litematica Flex is a lightweight addon for Litematica that makes block matching more flexible. It allows Easy Place and schematic verification to treat similar blocks as equivalent, such as different colors of concrete or stained glass.
+
 版本 **Alpha1.0.0**。Minecraft 26.3 客户端 Fabric 附加模组，依赖 Litematica 0.29.x、MaLiLib 0.30.x、Fabric Loader 0.19.5+ 和 Java 25。
 
 安装 `build/libs/litematica-flex-26.3-Alpha1.0.0.jar`，移走旧 Flex JAR。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
