@@ -10,6 +10,8 @@ public final class IntegrationSmoke implements PreLaunchEntrypoint {
             "fi.dy.masa.litematica.schematic.verifier.SchematicVerifier",
             "fi.dy.masa.litematica.gui.GuiSchematicVerifier",
             "fi.dy.masa.litematica.gui.GuiMaterialList",
+            "fi.dy.masa.litematica.materials.MaterialListBase",
+            "fi.dy.masa.litematica.gui.widgets.WidgetListMaterialList",
             "fi.dy.masa.litematica.render.schematic.ChunkRendererSchematicVbo",
             "fi.dy.masa.litematica.util.EasyPlaceUtils",
             "fi.dy.masa.litematica.util.WorldUtils",

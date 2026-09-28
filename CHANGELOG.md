@@ -1,5 +1,11 @@
 # Litematica Flex Alpha ver. 变更记录 / Changelog
 
+## Alpha1.1.1
+
+- 材料清单的替代模式改为在 Litematica 原界面内切换表格；可互换的原理图材料合并显示总数、待备数量和已备数量，并可搜索、排序、刷新库存及悬停查看组内材料。<br>The material-list substitution mode now switches the table inside Litematica's original screen. Interchangeable schematic materials share total, needed, and covered counts, with search, sorting, stock refresh, and member details on hover.
+- 库存优先分配给完全一致的需求，每件物品只计一次；只有组内方块彼此双向互换时才合并，避免重叠规则串门。原版数据和其他模组提供的库存计数保持不变。<br>Exact demands receive stock first, and each item is allocated once. Every member must be mutually interchangeable before grouping, so overlapping rules cannot bridge unrelated materials. Litematica's source data and stock counts supplied by other mods remain unchanged.
+- 校验器保留原版逐项列表，在同一界面显示 Flex 的简要统计，不再打开独立明细页。<br>The verifier keeps Litematica's per-block list and shows a compact Flex summary in the same screen instead of opening a separate details page.
+
 ## Alpha1.1.0
 
 - 设置新增“屏幕显示”页：HUD 可放在左上、右上、左下、右下，或完全关闭，并可调整水平与垂直边距。<br>The new “Screen display” page places the HUD in any corner or turns it off, with adjustable horizontal and vertical margins.

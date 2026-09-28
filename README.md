@@ -4,9 +4,9 @@ Litematica Flex 是 Litematica 的轻量附加模组，让相近方块的匹配�
 
 Litematica Flex is a lightweight Litematica addon that makes block matching more flexible. For example, Easy Place and schematic verification can treat different colors of concrete or stained glass as equivalent when the rules allow it.
 
-版本 **Alpha1.1.0**。这是 Minecraft 26.3 的 Fabric 客户端模组，依赖 Litematica 0.29.x、MaLiLib 0.30.x、Fabric Loader 0.19.5+ 和 Java 25。
+版本 **Alpha1.1.1**。这是 Minecraft 26.3 的 Fabric 客户端模组，依赖 Litematica 0.29.x、MaLiLib 0.30.x、Fabric Loader 0.19.5+ 和 Java 25。
 
-Version **Alpha1.1.0**. This is a Fabric client mod for Minecraft 26.3. It requires Litematica 0.29.x, MaLiLib 0.30.x, Fabric Loader 0.19.5+, and Java 25.
+Version **Alpha1.1.1**. This is a Fabric client mod for Minecraft 26.3. It requires Litematica 0.29.x, MaLiLib 0.30.x, Fabric Loader 0.19.5+, and Java 25.
 
 界面会跟随 Minecraft 当前语言自动显示简体中文或英文；预设组、提示、HUD 和快捷键名称都有对应翻译。切换游戏语言后重新打开 Flex 设置即可看到新语言，配置文件中的规则 ID 不变。
 
@@ -16,9 +16,9 @@ The interface follows Minecraft's selected language and supports Simplified Chin
 
 Strict review pauses substitutions only for the current game session. Restarting the game turns it off automatically so a temporary pause cannot silently carry over.
 
-安装 `build/libs/litematica-flex-26.3-Alpha1.1.0.jar`。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
+安装 `build/libs/litematica-flex-26.3-Alpha1.1.1.jar`。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
 
-Install `build/libs/litematica-flex-26.3-Alpha1.1.0.jar`. Press Left Alt + F to open settings and Left Alt + R to toggle temporary strict review.
+Install `build/libs/litematica-flex-26.3-Alpha1.1.1.jar`. Press Left Alt + F to open settings and Left Alt + R to toggle temporary strict review.
 
 ## 设置与优先级 / Settings and priority
 
@@ -46,13 +46,13 @@ Changing a rule control saves it and refreshes the schematic renderer, material-
 
 All placements and subregions use one global profile. Legacy `placements` and `regions` fields are ignored when read and removed on the next save. The global switch and blocklist always take priority.
 
-Litematica 材料清单新增“显示替代模式”，打开可搜索、滚动的只读替代材料列表。每行展示需求方块图标、名称、已覆盖／所需数量与分配的替代材料，悬停可查看完整文字。它用 Litematica 的库存计数接口读取背包、潜影盒／收纳袋和按原模组设置启用的末影箱缓存；若其他模组已提高原材料清单中的可用数量，也会保留这部分基数。每件物品只分配给一条需求，原材料优先。估算按物品类型进行，具体状态与服务器放置结果仍由校验器和实际放置判断。原材料清单的数量与其他模组接入的数据不会被 Flex 改写。
+Litematica 材料清单新增“替代模式”开关，直接在原界面切换为同组汇总表。原理图中可双向互换的方块合并为一行，合计总数、待备数量和已备数量；悬停可查看组内方块、注册名及实际分配的材料。重叠规则只有在组内每两个方块都能互换时才会合并，避免木材和石材通过中间规则串门。表格可搜索、滚动和按列排序；合并视图中的行只读，关闭开关即可使用原版逐项忽略功能。它用 Litematica 的库存计数接口读取背包、潜影盒／收纳袋和按原模组设置启用的末影箱缓存；若其他模组已提高原材料清单中的可用数量，也会保留这部分基数。每件物品只分配给一条需求，原材料优先。估算按物品类型进行，具体状态与服务器放置结果仍由校验器和实际放置判断。原材料清单的数量与其他模组接入的数据不会被 Flex 改写。
 
-Litematica's material list gains a “Show substitutions” button that opens a searchable, scrollable, read-only estimate. Each row shows the required block's icon and name, covered versus needed quantity, and allocated substitutes; hover for full text. It reads inventory counts through Litematica, including shulker boxes and bundles, plus the ender-chest cache when enabled in Litematica. If another mod has increased the available count for an original material, that count is retained. Each item is allocated to only one requirement, with exact materials taking priority. This is an item-type estimate; the verifier and actual placement still determine block-state and server results. Flex does not rewrite the original material list or data supplied to it by other mods.
+Litematica's material list gains a “Substitution view” toggle that switches the table in place. Mutually interchangeable schematic blocks share one row with combined total, needed, and covered counts; hover to see all members, registry IDs, and allocated stock. Every pair in a group must be interchangeable, so overlapping rules cannot accidentally bridge wood and stone. The table supports search, scrolling, and column sorting. Grouped rows are read-only; turn the toggle off to use Litematica's per-item Ignore action. Inventory counts come from Litematica, including shulker boxes, bundles, and the ender-chest cache when enabled there. Higher original-item counts supplied by other mods remain available. Each item covers at most one demand, with exact materials assigned first. This is an item-type estimate; the verifier and actual placement still determine block-state and server results. Flex does not rewrite Litematica's source list or other mods' data.
 
-校验器新增“Flex 校验明细”，用可搜索、滚动的列表展示完全一致、合规替代、替代材料状态错误及各接受规则的数量。世界内 HUD 在看向未合规的原理图方块时提示轻松放置的本地选材阻断原因；它不能代替服务器返回的放置结果。
+校验器保留 Litematica 原有的逐项列表，在同一界面增加完全一致、合规替代和替代材料状态错误的简要统计。世界内 HUD 在看向未合规的原理图方块时提示轻松放置的本地选材阻断原因；它不能代替服务器返回的放置结果。
 
-The verifier gains “Flex verification details,” a searchable, scrollable list of exact matches, accepted substitutes, substitute state errors, and counts by acceptance rule. When you look at a schematic block that is not accepted, the in-world HUD shows a local reason why Easy Place cannot select a material. It cannot diagnose the server's placement response.
+The verifier keeps Litematica's per-block list and adds a compact summary of exact matches, accepted substitutes, and substitute state errors in the same screen. When you look at a schematic block that is not accepted, the in-world HUD shows a local reason why Easy Place cannot select a material. It cannot diagnose the server's placement response.
 
 HUD 默认显示在左上角。若与 Sodium、MiniHUD 或其他信息层重叠，可在“屏幕显示”页手动选择其他角落并调整边距，或将位置设为“关闭”。旧配置的 `showHud: false` 会读取为“关闭”，保存时改用 `hudPosition` 字段。
 

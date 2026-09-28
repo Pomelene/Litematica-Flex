@@ -463,5 +463,14 @@
   "litematica_flex.垂直边距": "Vertical margin",
   "litematica_flex.选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。": "Choose a corner or turn off the HUD. Adjust margins to avoid overlays from Sodium, MiniHUD, and other mods. Bottom positions leave room for the vanilla hotbar.",
   "litematica_flex.从所选屏幕角向内移动的像素数。": "Pixels inward from the selected screen corner.",
-  "litematica_flex.从屏幕顶部或快捷栏上方安全区域向内移动的像素数。": "Pixels inward from the screen top or the area above the hotbar."
+  "litematica_flex.从屏幕顶部或快捷栏上方安全区域向内移动的像素数。": "Pixels inward from the screen top or the area above the hotbar.",
+  "litematica_flex.替代模式：开": "Substitution view: on",
+  "litematica_flex.替代模式：关": "Substitution view: off",
+  "litematica_flex.总数": "Total",
+  "litematica_flex.待备": "Needed",
+  "litematica_flex.已备": "Covered",
+  "litematica_flex.grouped_name": "%s + %s types",
+  "litematica_flex.grouped_members": "Schematic needs: %s",
+  "litematica_flex.grouped_stock": "Allocated stock: %s",
+  "litematica_flex.verifier_summary": "Flex: exact %s · substitute %s · substitute state errors %s"
 }

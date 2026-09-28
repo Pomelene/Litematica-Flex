@@ -463,5 +463,14 @@
   "litematica_flex.垂直边距": "垂直边距",
   "litematica_flex.选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。": "选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。",
   "litematica_flex.从所选屏幕角向内移动的像素数。": "从所选屏幕角向内移动的像素数。",
-  "litematica_flex.从屏幕顶部或快捷栏上方安全区域向内移动的像素数。": "从屏幕顶部或快捷栏上方安全区域向内移动的像素数。"
+  "litematica_flex.从屏幕顶部或快捷栏上方安全区域向内移动的像素数。": "从屏幕顶部或快捷栏上方安全区域向内移动的像素数。",
+  "litematica_flex.替代模式：开": "替代模式：开",
+  "litematica_flex.替代模式：关": "替代模式：关",
+  "litematica_flex.总数": "总数",
+  "litematica_flex.待备": "待备",
+  "litematica_flex.已备": "已备",
+  "litematica_flex.grouped_name": "%s 等 %s 种",
+  "litematica_flex.grouped_members": "原理图需求：%s",
+  "litematica_flex.grouped_stock": "已分配材料：%s",
+  "litematica_flex.verifier_summary": "Flex：完全一致 %s · 合规替代 %s · 替代状态错误 %s"
 }

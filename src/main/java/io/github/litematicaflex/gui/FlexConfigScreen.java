@@ -32,7 +32,7 @@ public final class FlexConfigScreen extends GuiConfigsBase {
     private String category="木材",inputError;
 
     public FlexConfigScreen() {
-        super(10,96,"litematica_flex",null,"Litematica Flex Alpha ver. · Alpha1.1.0 · 26.3");
+        super(10,96,"litematica_flex",null,"Litematica Flex Alpha ver. · Alpha1.1.1 · 26.3");
         normalizeStoredGroups();profile=FlexRuntime.STORE.editable().global;buildOptions();
     }
     @Override public void initGui() {
