@@ -27,7 +27,12 @@ public final class ConfigurationStore {
         try {
             if (!Files.exists(path)) { validFile=true; lastRead=null; lastError=null; return true; }
             String contents=Files.readString(path, StandardCharsets.UTF_8);
-            FlexConfiguration loaded = JSON.fromJson(contents, FlexConfiguration.class);
+            JsonObject document = JsonParser.parseString(contents).getAsJsonObject();
+            // Older files only had a boolean. Respect a saved "off" choice, then drop that field on save.
+            if (document.has("showHud") && !document.has("hudPosition")) {
+                document.addProperty("hudPosition", document.get("showHud").getAsBoolean() ? "TOP_LEFT" : "OFF");
+            }
+            FlexConfiguration loaded = JSON.fromJson(document, FlexConfiguration.class);
             validate(loaded);
             editable = loaded;
             validFile = true;
@@ -64,6 +69,10 @@ public final class ConfigurationStore {
     private static void validate(FlexConfiguration config) {
         if (config == null || config.schemaVersion != 1 || config.global == null
                 || config.savedProfiles == null || config.hotkeys == null) throw new IllegalArgumentException("Unsupported configuration");
+        try { HudPosition.valueOf(config.hudPosition); }
+        catch (IllegalArgumentException | NullPointerException e) { throw new IllegalArgumentException("Invalid HUD position",e); }
+        if (config.hudOffsetX < 0 || config.hudOffsetX > 500 || config.hudOffsetY < 0 || config.hudOffsetY > 500)
+            throw new IllegalArgumentException("Invalid HUD margin");
         config.hotkeys.forEach((key,value) -> { if(key==null || value==null)throw new IllegalArgumentException("Invalid hotkey"); });
         validate(config.global);
         config.savedProfiles.values().forEach(ConfigurationStore::validate);

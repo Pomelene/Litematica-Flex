@@ -19,6 +19,9 @@ class ConfigurationStoreTest {
         config.global.replacements.put("minecraft:oak_planks",List.of("minecraft:spruce_planks"));
         config.savedProfiles.put("生存建筑",ProfileLibrary.copy(config.global));
         config.hotkeys.put("打开 Flex 设置","LEFT_ALT,F");
+        config.hudPosition=HudPosition.BOTTOM_RIGHT.name();
+        config.hudOffsetX=25;
+        config.hudOffsetY=18;
         store.save();
         var imported=new ConfigurationStore(file());
         assertTrue(imported.load());
@@ -29,6 +32,9 @@ class ConfigurationStoreTest {
         assertEquals(config.global.replacements,imported.editable().global.replacements);
         assertEquals(config.global.customGroups,imported.editable().savedProfiles.get("生存建筑").customGroups);
         assertEquals(config.hotkeys,imported.editable().hotkeys);
+        assertEquals("BOTTOM_RIGHT",imported.editable().hudPosition);
+        assertEquals(25,imported.editable().hudOffsetX);
+        assertEquals(18,imported.editable().hudOffsetY);
         assertFalse(Files.readString(file()).contains("\"placements\""));
         assertFalse(Files.readString(file()).contains("\"regions\""));
         try(var files=Files.list(file().getParent())) { assertEquals(1,files.count()); }
@@ -59,13 +65,32 @@ class ConfigurationStoreTest {
 
     @Test void externalEditRequiresReloadAndThenCanSave() throws Exception {
         var store=new ConfigurationStore(file());store.save();
-        String external=Files.readString(file()).replace("\"showHud\": true","\"showHud\": false");
+        String external=Files.readString(file()).replace("\"hudPosition\": \"TOP_LEFT\"","\"hudPosition\": \"OFF\"");
         Files.writeString(file(),external);
         assertThrows(IllegalStateException.class,store::save);
         assertTrue(store.load());
-        assertFalse(store.editable().showHud);
+        assertEquals("OFF",store.editable().hudPosition);
         store.save();
         assertEquals(external,Files.readString(file().resolveSibling("litematica-flex.json.bak")));
+    }
+
+    @Test void oldHudSwitchMigratesToPositionAndIsDropped() throws Exception {
+        var store=new ConfigurationStore(file());store.save();
+        String old=Files.readString(file()).replace("\"hudPosition\": \"TOP_LEFT\"","\"showHud\": false");
+        Files.writeString(file(),old);
+        assertTrue(store.load());
+        assertEquals("OFF",store.editable().hudPosition);
+        store.save();
+        String updated=Files.readString(file());
+        assertTrue(updated.contains("\"hudPosition\": \"OFF\""));
+        assertFalse(updated.contains("\"showHud\""));
+    }
+
+    @Test void invalidHudPositionPreservesLastValidConfiguration() throws Exception {
+        var store=new ConfigurationStore(file());store.save();
+        Files.writeString(file(),Files.readString(file()).replace("\"TOP_LEFT\"","\"UNKNOWN\""));
+        assertFalse(store.load());
+        assertEquals("TOP_LEFT",store.editable().hudPosition);
     }
 
     @Test void existingSchemaLoadsWithoutNewOptionalFields() throws Exception {

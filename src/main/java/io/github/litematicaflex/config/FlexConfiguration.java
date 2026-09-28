@@ -7,5 +7,7 @@ public final class FlexConfiguration {
     public RuleProfile global = new RuleProfile();
     public Map<String, RuleProfile> savedProfiles = new LinkedHashMap<>();
     public Map<String, String> hotkeys = new LinkedHashMap<>();
-    public boolean showHud = true;
+    public String hudPosition = HudPosition.TOP_LEFT.name();
+    public int hudOffsetX = 8;
+    public int hudOffsetY = 8;
 }

@@ -1,5 +1,11 @@
 # Litematica Flex Alpha ver. 变更记录
 
+## Alpha1.1.0
+
+- 设置新增“屏幕显示”页：HUD 可放在左上、右上、左下、右下，或完全关闭，并可调整水平与垂直边距。
+- HUD 根据翻译后的实际文本宽度定位，长文字在窄屏上截断；底部位置为原版快捷栏预留空间。
+- 旧配置的 `showHud: false` 自动迁移为 `hudPosition: "OFF"`，保存时移除旧字段。
+
 ## Alpha1.0.1
 
 - 所有投影与子区域统一使用全局规则；移除旧的 `placements`、`regions` 配置字段。

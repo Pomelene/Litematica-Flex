@@ -452,5 +452,16 @@
   "litematica_flex.原方块相同，但状态不合规": "Same block, but state does not match",
   "litematica_flex.当前规则不接受的方块": "Block rejected by current rules",
   "litematica_flex.未放置 / 多放置": "Not placed / extra blocks",
-  "litematica_flex.接受原因": "Accepted by"
+  "litematica_flex.接受原因": "Accepted by",
+  "litematica_flex.屏幕显示": "Screen display",
+  "litematica_flex.HUD 位置": "HUD position",
+  "litematica_flex.左上角": "Top left",
+  "litematica_flex.右上角": "Top right",
+  "litematica_flex.左下角": "Bottom left",
+  "litematica_flex.右下角": "Bottom right",
+  "litematica_flex.水平边距": "Horizontal margin",
+  "litematica_flex.垂直边距": "Vertical margin",
+  "litematica_flex.选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。": "Choose a corner or turn off the HUD. Adjust margins to avoid overlays from Sodium, MiniHUD, and other mods. Bottom positions leave room for the vanilla hotbar.",
+  "litematica_flex.从所选屏幕角向内移动的像素数。": "Pixels inward from the selected screen corner.",
+  "litematica_flex.从屏幕顶部或快捷栏上方安全区域向内移动的像素数。": "Pixels inward from the screen top or the area above the hotbar."
 }

@@ -452,5 +452,16 @@
   "litematica_flex.原方块相同，但状态不合规": "原方块相同，但状态不合规",
   "litematica_flex.当前规则不接受的方块": "当前规则不接受的方块",
   "litematica_flex.未放置 / 多放置": "未放置 / 多放置",
-  "litematica_flex.接受原因": "接受原因"
+  "litematica_flex.接受原因": "接受原因",
+  "litematica_flex.屏幕显示": "屏幕显示",
+  "litematica_flex.HUD 位置": "HUD 位置",
+  "litematica_flex.左上角": "左上角",
+  "litematica_flex.右上角": "右上角",
+  "litematica_flex.左下角": "左下角",
+  "litematica_flex.右下角": "右下角",
+  "litematica_flex.水平边距": "水平边距",
+  "litematica_flex.垂直边距": "垂直边距",
+  "litematica_flex.选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。": "选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。",
+  "litematica_flex.从所选屏幕角向内移动的像素数。": "从所选屏幕角向内移动的像素数。",
+  "litematica_flex.从屏幕顶部或快捷栏上方安全区域向内移动的像素数。": "从屏幕顶部或快捷栏上方安全区域向内移动的像素数。"
 }

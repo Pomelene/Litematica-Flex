@@ -12,6 +12,7 @@ import fi.dy.masa.malilib.gui.widgets.WidgetListConfigOptions;
 import io.github.litematicaflex.FlexMod;
 import io.github.litematicaflex.config.RuleProfile;
 import io.github.litematicaflex.config.ProfileLibrary;
+import io.github.litematicaflex.config.HudPosition;
 import io.github.litematicaflex.runtime.FlexRuntime;
 import io.github.litematicaflex.api.FlexApi;
 import io.github.litematicaflex.rules.BlacklistPresets;
@@ -22,7 +23,7 @@ import java.util.function.Consumer;
 
 /** Replacement rules share one column; shared state constraints live on the options page. */
 public final class FlexConfigScreen extends GuiConfigsBase {
-    private static final List<String> PAGES=List.of("预设方案","黑名单","自定义配置","选项");
+    private static final List<String> PAGES=List.of("预设方案","黑名单","自定义配置","选项","屏幕显示");
     private String page="预设方案",libraryName="我的方案";
     private RuleProfile profile;
     private final List<IConfigBase> options=new ArrayList<>();
@@ -31,7 +32,7 @@ public final class FlexConfigScreen extends GuiConfigsBase {
     private String category="木材",inputError;
 
     public FlexConfigScreen() {
-        super(10,96,"litematica_flex",null,"Litematica Flex Alpha ver. · Alpha1.0.1 · 26.3");
+        super(10,96,"litematica_flex",null,"Litematica Flex Alpha ver. · Alpha1.1.0 · 26.3");
         normalizeStoredGroups();profile=FlexRuntime.STORE.editable().global;buildOptions();
     }
     @Override public void initGui() {
@@ -226,6 +227,7 @@ public final class FlexConfigScreen extends GuiConfigsBase {
     private void buildOptions() {
         options.clear();if(page.equals("自定义配置"))return;
         if(page.equals("黑名单")){blacklistOptions();return;}
+        if(page.equals("屏幕显示")){hudOptions();return;}
         if(page.equals("预设方案")) {
             bool("启用替换（全局总开关）",profile.enabled,v -> {profile.enabled=v;pendingRebuild=true;})
                 .setComment(FlexText.tr("关闭后停止全部替换和状态忽略，立即恢复原始判断。所有投影和子区域统一使用此设置。"));
@@ -254,13 +256,30 @@ public final class FlexConfigScreen extends GuiConfigsBase {
         bool("应用于投影渲染",profile.rendering,v -> profile.rendering=v);
         bool("应用于轻松放置和放置限制",profile.placement,v -> profile.placement=v);
         bool("应用于材料清单",profile.materialList,v -> profile.materialList=v);
-        bool("显示 HUD 和匹配原因",FlexRuntime.STORE.editable().showHud,v -> FlexRuntime.STORE.editable().showHud=v);
         bool("标记已接受的替代方块",profile.showAcceptedOverlay,v -> profile.showAcceptedOverlay=v);
         bool("保持方块形状",!profile.allowCrossShape,v -> profile.allowCrossShape=!v);
         stateOptions();
         var selection=new ConfigOptionList("选材方式",Selection.valueOf(profile.selection));selection.setPrettyName(FlexText.tr("选材方式"));selection.setValueChangeCallback(c -> {profile.selection=c.getStringValue();pendingRefresh=true;});options.add(selection);
         var tolerance=new ConfigDouble("硬度差容差",profile.hardnessTolerance,0,100);tolerance.setPrettyName(FlexText.tr("硬度差容差"));tolerance.setValueChangeCallback(c -> {profile.hardnessTolerance=(float)c.getDoubleValue();pendingRefresh=true;});options.add(tolerance);
         for(var key:List.of(FlexMod.OPEN,FlexMod.STRICT,FlexMod.TOGGLE,FlexMod.SUMMARY)){key.setPrettyName(FlexText.tr(key.getName()));options.add(key);}
+    }
+    private void hudOptions() {
+        var config=FlexRuntime.STORE.editable();
+        var position=new ConfigOptionList("HUD 位置",HudPosition.valueOf(config.hudPosition));
+        position.setPrettyName(FlexText.tr("HUD 位置"));
+        position.setComment(FlexText.tr("选择四角或关闭；边距可用于避开 Sodium、MiniHUD 等信息层。底部位置会避开原版快捷栏。"));
+        position.setValueChangeCallback(c -> {config.hudPosition=c.getStringValue();pendingRefresh=true;});
+        options.add(position);
+        var x=new ConfigInteger("水平边距",config.hudOffsetX,0,500);
+        x.setPrettyName(FlexText.tr("水平边距"));
+        x.setComment(FlexText.tr("从所选屏幕角向内移动的像素数。"));
+        x.setValueChangeCallback(c -> {config.hudOffsetX=c.getIntegerValue();pendingRefresh=true;});
+        options.add(x);
+        var y=new ConfigInteger("垂直边距",config.hudOffsetY,0,500);
+        y.setPrettyName(FlexText.tr("垂直边距"));
+        y.setComment(FlexText.tr("从屏幕顶部或快捷栏上方安全区域向内移动的像素数。"));
+        y.setValueChangeCallback(c -> {config.hudOffsetY=c.getIntegerValue();pendingRefresh=true;});
+        options.add(y);
     }
     private void blacklistOptions() {
         bool("启用本范围黑名单",profile.blacklistEnabled,v -> {profile.blacklistEnabled=v;pendingRebuild=true;})
