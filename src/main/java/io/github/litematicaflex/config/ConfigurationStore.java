@@ -62,18 +62,11 @@ public final class ConfigurationStore {
     }
 
     private static void validate(FlexConfiguration config) {
-        if (config == null || config.schemaVersion != 1 || config.global == null || config.placements == null
-                || config.regions == null || config.savedProfiles == null || config.hotkeys == null) throw new IllegalArgumentException("Unsupported configuration");
+        if (config == null || config.schemaVersion != 1 || config.global == null
+                || config.savedProfiles == null || config.hotkeys == null) throw new IllegalArgumentException("Unsupported configuration");
         config.hotkeys.forEach((key,value) -> { if(key==null || value==null)throw new IllegalArgumentException("Invalid hotkey"); });
         validate(config.global);
-        config.placements.values().forEach(ConfigurationStore::validate);
         config.savedProfiles.values().forEach(ConfigurationStore::validate);
-        for (var region : config.regions) {
-            if (region == null || region.placement == null || region.minX > region.maxX || region.minY > region.maxY || region.minZ > region.maxZ) {
-                throw new IllegalArgumentException("Invalid region bounds");
-            }
-            validate(region.profile);
-        }
     }
 
     private static void validate(RuleProfile profile) {

@@ -1,6 +1,8 @@
 package io.github.litematicaflex.runtime;
 
 import io.github.litematicaflex.config.RuleProfile;
+import io.github.litematicaflex.rules.BlacklistPresets;
+import fi.dy.masa.litematica.config.Configs;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,6 +23,46 @@ public final class ReplacementResolver {
         List<ItemStack> inventory=new ArrayList<>();
         for(int slot=0;slot<mc.player.getInventory().getContainerSize();slot++)inventory.add(mc.player.getInventory().getItem(slot));
         return selectFromStacks(expected,pos,profile,List.of(mc.player.getMainHandItem(),mc.player.getOffhandItem()),inventory);
+    }
+
+    /** Explain local selection failures without modifying Litematica's picker or inventory. */
+    public static String diagnose(BlockState expected,BlockPos pos) {
+        var mc=Minecraft.getInstance();
+        if(mc.player==null || expected.isAir())return null;
+        if(!Configs.Generic.EASY_PLACE_MODE.getBooleanValue())return "Litematica 轻松放置未开启";
+        var profile=FlexRuntime.profile(pos,null);
+        if(!profile.enabled)return "Flex 替换总开关已关闭";
+        if(profile.strictReview)return "严格复核正在暂停替换";
+        if(!profile.placement)return "Flex 未应用于轻松放置";
+        String expectedId=BuiltInRegistries.BLOCK.getKey(expected.getBlock()).toString();
+        if(BlacklistPresets.excludes(profile,expectedId))return "原理图方块受到黑名单保护";
+        var inventory=mc.player.getInventory();
+        var selected=forPlacement(expected,pos);
+        var required=selected.getBlock().asItem();
+        int source=-1;
+        for(int slot=0;slot<inventory.getContainerSize();slot++)
+            if(inventory.getItem(slot).is(required)){source=slot;break;}
+        if(source>=0) {
+            if(source>=9) {
+                List<ItemStack> hotbar=new ArrayList<>();
+                for(int i=0;i<9;i++)hotbar.add(inventory.getItem(i));
+                if(safeHotbarSlot(hotbar,inventory.getSelectedSlot())<0)return "快捷栏没有可安全替换的空位";
+            }
+            return null;
+        }
+        if(selected!=expected)return "固定映射目标不在随身背包";
+        if(profile.selection.equals("FIXED_ONLY"))return "当前只允许固定映射选材";
+        boolean stateMismatch=false;
+        for(int slot=0;slot<inventory.getContainerSize();slot++) {
+            var stack=inventory.getItem(slot);
+            if(stack.getItem() instanceof BlockItem item) {
+                var candidate=transfer(expected,item.getBlock().defaultBlockState());
+                stateMismatch|=FlexRuntime.materialMatches(expected,candidate,pos,null,FlexRuntime.Channel.PLACEMENT)
+                    && !FlexRuntime.match(expected,candidate,pos,null,FlexRuntime.Channel.PLACEMENT).accepted();
+            }
+        }
+        if(stateMismatch)return "背包材料符合种类，但状态限制不允许";
+        return "随身背包没有合规方块；末影箱缓存不能直接供轻松放置取用";
     }
 
     /** Deterministic selector shared by the game integration and real-item regression tests. */

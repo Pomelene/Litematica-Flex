@@ -9,6 +9,7 @@ import fi.dy.masa.malilib.util.data.ModInfo;
 import fi.dy.masa.litematica.data.DataManager;
 import io.github.litematicaflex.api.*;
 import io.github.litematicaflex.gui.FlexConfigScreen;
+import io.github.litematicaflex.gui.FlexText;
 import io.github.litematicaflex.runtime.FlexRuntime;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
@@ -35,7 +36,9 @@ public final class FlexMod implements ModInitializer, IKeybindProvider {
     @Override public void onInitialize() {
         FabricLoader.getInstance().getEntrypoints("litematica-flex",FlexExtension.class).forEach(extension -> extension.register(FlexApi.INSTANCE));
         InitializationHandler.getInstance().registerInitializationHandler(() -> {
-            FlexRuntime.STORE.load(); FlexRuntime.publish();
+            FlexRuntime.STORE.load();
+            FlexRuntime.clearTemporaryReview();
+            FlexRuntime.publish();
             for(var hotkey:HOTKEYS) {
                 var saved=FlexRuntime.STORE.editable().hotkeys.get(hotkey.getName());
                 if(saved!=null)hotkey.setHotkeyStringValue(saved);
@@ -62,7 +65,7 @@ public final class FlexMod implements ModInitializer, IKeybindProvider {
         });
     }
     @Override public void addKeysToMap(IKeybindManager manager) { HOTKEYS.forEach(key -> manager.addKeybindToMap(key.getKeybind())); }
-    @Override public void addHotkeys(IKeybindManager manager) { manager.addHotkeysForCategory("Litematica Flex Alpha ver.","Flex 快捷键",HOTKEYS); }
+    @Override public void addHotkeys(IKeybindManager manager) { manager.addHotkeysForCategory("Litematica Flex Alpha ver.",FlexText.tr("Flex 快捷键"),HOTKEYS); }
 
     public static void showSummary() {
         var placement=DataManager.getSchematicPlacementManager().getSelectedSchematicPlacement();
@@ -73,6 +76,6 @@ public final class FlexMod implements ModInitializer, IKeybindProvider {
     }
     private static void message(String text) {
         var player=Minecraft.getInstance().player;
-        if(player!=null)fi.dy.masa.malilib.util.InfoUtils.sendVanillaMessage(Component.literal(text));
+        if(player!=null)fi.dy.masa.malilib.util.InfoUtils.sendVanillaMessage(Component.literal(FlexText.tr(text)));
     }
 }

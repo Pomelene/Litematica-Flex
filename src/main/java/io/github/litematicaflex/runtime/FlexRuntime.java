@@ -16,9 +16,16 @@ public final class FlexRuntime {
     public static final ConfigurationStore STORE = new ConfigurationStore();
     public static final BlockCatalogue CATALOGUE = new BlockCatalogue();
     private static final RuleEngine ENGINE = new RuleEngine();
-    private static volatile ProfileSnapshot snapshot = new ProfileSnapshot(new RuleProfile().copy(), Map.of(), List.of(), List.of());
+    private static volatile ProfileSnapshot snapshot = new ProfileSnapshot(new RuleProfile().copy());
 
     private FlexRuntime() {}
+
+    /** A saved pause must not disable replacements after a game restart or file reload. */
+    public static void clearTemporaryReview() {
+        var config=STORE.editable();
+        config.global.strictReview=false;
+        // Legacy per-placement settings are preserved in JSON but no longer applied.
+    }
 
     public static String placementKey(SchematicPlacement placement) {
         return String.valueOf(placement.getSchematicFile()) + "|" + placement.getName() + "|" + placement.getOrigin().toShortString();
@@ -26,11 +33,7 @@ public final class FlexRuntime {
 
     public static RuleProfile profile(BlockPos position, String placement) { return snapshot.resolve(position, placement); }
 
-    public static String profileSource(BlockPos position,String placement) {
-        var resolved=snapshot.resolve(position,placement);
-        if(resolved==snapshot.global())return "全局";
-        return snapshot.regions().stream().anyMatch(r -> r.profile()==resolved)?"区域独立":"投影独立";
-    }
+    public static String profileSource(BlockPos position,String placement) { return "全局"; }
 
     public static MatchResult match(BlockState expected, BlockState actual, BlockPos position, String placement, Channel channel) {
         if (expected == actual) return MatchResult.EXACT;
@@ -75,25 +78,7 @@ public final class FlexRuntime {
     /** Call on the client thread after a configuration/placement change. */
     public static void publish() {
         FlexConfiguration config = STORE.editable();
-        Map<String,RuleProfile> profiles = new LinkedHashMap<>();
-        config.placements.forEach((key,value) -> profiles.put(key, effective(value)));
-        List<ProfileSnapshot.Bounds> bounds = new ArrayList<>();
-        var manager = DataManager.getSchematicPlacementManager();
-        List<SchematicPlacement> placements = new ArrayList<>(manager.getAllSchematicsPlacements());
-        var selected = manager.getSelectedSchematicPlacement();
-        if (selected != null) { placements.remove(selected); placements.addFirst(selected); }
-        for (var placement : placements) {
-            if (!placement.isEnabled()) continue;
-            for (var box : placement.getSubRegionBoxes(SubRegionPlacement.RequiredEnabled.PLACEMENT_ENABLED).values()) {
-                BlockPos a = box.getPos1(), b = box.getPos2();
-                if (a == null || b == null) continue;
-                bounds.add(new ProfileSnapshot.Bounds(placementKey(placement), Math.min(a.getX(),b.getX()),Math.min(a.getY(),b.getY()),Math.min(a.getZ(),b.getZ()),
-                        Math.max(a.getX(),b.getX()),Math.max(a.getY(),b.getY()),Math.max(a.getZ(),b.getZ())));
-            }
-        }
-        List<ProfileSnapshot.Region> regions = new ArrayList<>();
-        for (var r : config.regions) regions.add(new ProfileSnapshot.Region(new ProfileSnapshot.Bounds(r.placement,r.minX,r.minY,r.minZ,r.maxX,r.maxY,r.maxZ),effective(r.profile)));
-        snapshot = new ProfileSnapshot(effective(config.global),Map.copyOf(profiles),List.copyOf(bounds),List.copyOf(regions));
+        snapshot = new ProfileSnapshot(effective(config.global));
     }
 
     private static RuleProfile effective(RuleProfile original) {

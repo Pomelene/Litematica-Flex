@@ -9,8 +9,8 @@ import fi.dy.masa.malilib.gui.widgets.*;
 final class FlexOptionList extends WidgetListConfigOptions {
     static final class LockedBoolean extends ConfigBoolean {
         LockedBoolean(String name,boolean value) {
-            super(name,value,"当前处于全部替换模式、总开关关闭或严格复核中，此种类项暂不生效；原设置保留。");
-            setPrettyName("§8"+name);
+            super(name,value,FlexText.tr("当前处于全部替换模式、总开关关闭或严格复核中，此种类项暂不生效；原设置保留。"));
+            setPrettyName("§8"+FlexText.tr(name));
         }
     }
     FlexOptionList(int x,int y,int width,int height,int configWidth,boolean keySearch,GuiConfigsBase gui) {

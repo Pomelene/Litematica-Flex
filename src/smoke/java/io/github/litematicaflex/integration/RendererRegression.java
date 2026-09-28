@@ -53,7 +53,7 @@ final class RendererRegression {
         if(engine.compare(catalogue.describe(smooth),catalogue.describe(brick),profile).accepted())throw new IllegalStateException("Separate stone families leaked");
         profile.enabledGroups.add("stone.all");
         Field snapshot=io.github.litematicaflex.runtime.FlexRuntime.class.getDeclaredField("snapshot");snapshot.setAccessible(true);
-        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(profile.copy(),java.util.Map.of(),java.util.List.of(),java.util.List.of()));
+        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(profile.copy()));
         for(var channel:io.github.litematicaflex.runtime.FlexRuntime.Channel.values()) {
             if(!io.github.litematicaflex.runtime.FlexRuntime.match(smooth,brick,BlockPos.ZERO,null,channel).accepted())throw new IllegalStateException("Slab substitution rejected in "+channel);
         }
@@ -84,7 +84,7 @@ final class RendererRegression {
         io.github.litematicaflex.runtime.RenderMatchContext.position(BlockPos.ZERO);
         if(overlay.invoke(renderer,smooth,top)!=fi.dy.masa.litematica.util.OverlayType.WRONG_STATE)throw new IllegalStateException("Compatible slab state error not yellow");
         var woodProfile=new io.github.litematicaflex.config.RuleProfile();woodProfile.allReplacements=true;
-        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(woodProfile.copy(),java.util.Map.of(),java.util.List.of(),java.util.List.of()));
+        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(woodProfile.copy()));
         var oakLog=Blocks.STRIPPED_OAK_LOG.defaultBlockState();
         var spruceLog=Blocks.STRIPPED_SPRUCE_LOG.defaultBlockState().setValue(net.minecraft.world.level.block.RotatedPillarBlock.AXIS,net.minecraft.core.Direction.Axis.X);
         if(overlay.invoke(renderer,oakLog,spruceLog)!=fi.dy.masa.litematica.util.OverlayType.WRONG_STATE)throw new IllegalStateException("Stripped log axis mismatch not yellow");
@@ -93,11 +93,11 @@ final class RendererRegression {
         if(io.github.litematicaflex.runtime.ReplacementResolver.safeHotbarSlot(hotbar,0)!=1)throw new IllegalStateException("Inventory swap did not prefer empty slot");
         // Replace the published rules after a successful normalized read: old acceptance must not survive.
         woodProfile.enabled=false;
-        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(woodProfile.copy(),java.util.Map.of("test",profile.copy()),java.util.List.of(),java.util.List.of()));
+        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(woodProfile.copy()));
         if(read.invoke(renderer,client,BlockPos.ZERO,brickRead)!=brick)throw new IllegalStateException("Disabled global mode retained normalized mesh input");
         if(io.github.litematicaflex.runtime.FlexRuntime.match(smooth,brick,BlockPos.ZERO,"test",io.github.litematicaflex.runtime.FlexRuntime.Channel.VERIFICATION).accepted())throw new IllegalStateException("Placement override bypassed global disable");
         woodProfile.enabled=true;woodProfile.allReplacements=true;woodProfile.blacklistBlocks.add("minecraft:stone_brick_slab");
-        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(woodProfile.copy(),java.util.Map.of("test",profile.copy()),java.util.List.of(),java.util.List.of()));
+        snapshot.set(null,new io.github.litematicaflex.runtime.ProfileSnapshot(woodProfile.copy()));
         for(var channel:io.github.litematicaflex.runtime.FlexRuntime.Channel.values()) {
             if(io.github.litematicaflex.runtime.FlexRuntime.match(smooth,brick,BlockPos.ZERO,"test",channel).accepted())throw new IllegalStateException("Placement bypassed global blacklist: "+channel);
         }

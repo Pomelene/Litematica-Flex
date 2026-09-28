@@ -19,9 +19,6 @@ class ConfigurationStoreTest {
         config.global.replacements.put("minecraft:oak_planks",List.of("minecraft:spruce_planks"));
         config.savedProfiles.put("生存建筑",ProfileLibrary.copy(config.global));
         config.hotkeys.put("打开 Flex 设置","LEFT_ALT,F");
-        config.placements.put("example-placement",ProfileLibrary.copy(config.global));
-        var region=new FlexConfiguration.RegionOverride();region.placement="example-placement";
-        config.regions.add(region);
         store.save();
         var imported=new ConfigurationStore(file());
         assertTrue(imported.load());
@@ -32,8 +29,8 @@ class ConfigurationStoreTest {
         assertEquals(config.global.replacements,imported.editable().global.replacements);
         assertEquals(config.global.customGroups,imported.editable().savedProfiles.get("生存建筑").customGroups);
         assertEquals(config.hotkeys,imported.editable().hotkeys);
-        assertEquals(1,imported.editable().placements.size());
-        assertEquals(1,imported.editable().regions.size());
+        assertFalse(Files.readString(file()).contains("\"placements\""));
+        assertFalse(Files.readString(file()).contains("\"regions\""));
         try(var files=Files.list(file().getParent())) { assertEquals(1,files.count()); }
     }
 
@@ -46,6 +43,18 @@ class ConfigurationStoreTest {
         assertNotNull(store.lastError());
         assertThrows(IllegalStateException.class,store::save);
         assertEquals("{broken json",Files.readString(file()));
+    }
+
+    @Test void legacyScopeFieldsAreDroppedOnNextSave() throws Exception {
+        var store=new ConfigurationStore(file());store.save();
+        String old=Files.readString(file()).replace("\"savedProfiles\"",
+            "\"placements\": {\"unused\": {}}, \"regions\": [{}], \"savedProfiles\"");
+        Files.writeString(file(),old);
+        assertTrue(store.load());
+        store.save();
+        String updated=Files.readString(file());
+        assertFalse(updated.contains("\"placements\""));
+        assertFalse(updated.contains("\"regions\""));
     }
 
     @Test void externalEditRequiresReloadAndThenCanSave() throws Exception {

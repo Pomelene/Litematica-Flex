@@ -2,6 +2,6 @@
   "required": true,
   "package": "io.github.litematicaflex.mixin",
   "compatibilityLevel": "JAVA_25",
-  "client": ["VerifierMixin", "ChunkRendererMixin", "EasyPlaceMixin", "LegacyEasyPlaceMixin", "MaterialCountMixin", "MaterialListMixin"],
+  "client": ["VerifierMixin", "VerifierScreenMixin", "ChunkRendererMixin", "EasyPlaceMixin", "LegacyEasyPlaceMixin", "MaterialCountMixin", "MaterialListMixin", "MaterialScreenMixin"],
   "injectors": { "defaultRequire": 1 }
 }

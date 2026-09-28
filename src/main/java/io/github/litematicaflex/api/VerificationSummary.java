@@ -5,4 +5,6 @@ public interface VerificationSummary {
     int flexExactCount();
     int flexSubstitutionCount();
     int flexTemporaryCount();
+    int flexSubstitutionStateErrors();
+    java.util.Map<String,Integer> flexReasons();
 }
