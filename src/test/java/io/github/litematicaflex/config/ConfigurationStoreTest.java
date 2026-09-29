@@ -99,7 +99,27 @@ class ConfigurationStoreTest {
         var store=new ConfigurationStore(file());assertTrue(store.load());
         assertTrue(store.editable().global.enabledGroups.contains("wood.planks"));
         assertFalse(store.editable().global.allReplacements);
+        assertEquals(2,store.editable().schemaVersion);
+        assertTrue(store.editable().global.blacklistPresets.contains("copper_amethyst"));
         assertNotNull(store.editable().savedProfiles);store.save();
+    }
+
+    @Test void oldBlocklistGainsNewPresetOnceAndLaterOffChoicePersists() throws Exception {
+        var old=new ConfigurationStore(file());
+        old.editable().global.blacklistPresets.remove("copper_amethyst");
+        old.editable().savedProfiles.put("older",ProfileLibrary.copy(old.editable().global));
+        old.save();
+        Files.writeString(file(),Files.readString(file()).replace("\"schemaVersion\": 2","\"schemaVersion\": 1"));
+        var upgraded=new ConfigurationStore(file());
+        assertTrue(upgraded.load());
+        assertEquals(2,upgraded.editable().schemaVersion);
+        assertTrue(upgraded.editable().global.blacklistPresets.contains("copper_amethyst"));
+        assertTrue(upgraded.editable().savedProfiles.get("older").blacklistPresets.contains("copper_amethyst"));
+        upgraded.editable().global.blacklistPresets.remove("copper_amethyst");
+        upgraded.save();
+        var reloaded=new ConfigurationStore(file());
+        assertTrue(reloaded.load());
+        assertFalse(reloaded.editable().global.blacklistPresets.contains("copper_amethyst"));
     }
 
     @Test void invalidNestedProfileIsRejected() throws Exception {

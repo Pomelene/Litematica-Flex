@@ -38,9 +38,36 @@ class BlacklistPresetsTest {
         assertTrue(BlacklistPresets.excludes(p,"minecraft:slime_block"));
         assertTrue(BlacklistPresets.excludes(p,"minecraft:redstone_block"));
         assertTrue(BlacklistPresets.excludes(p,"minecraft:red_shulker_box"));
+        assertTrue(BlacklistPresets.excludes(p,"minecraft:waxed_oxidized_copper_bulb"));
+        assertTrue(BlacklistPresets.excludes(p,"minecraft:amethyst_block"));
         assertFalse(BlacklistPresets.excludes(p,"minecraft:stone"));
         var copy=p.copy();p.blacklistPresets.clear();p.blacklistBlocks.add("minecraft:stone");
         assertTrue(BlacklistPresets.excludes(copy,"minecraft:obsidian"));
         assertFalse(BlacklistPresets.excludes(copy,"minecraft:stone"));
+    }
+
+    @Test void redstoneDetailsPartitionTheAllProtectionPreset() {
+        var parts=new HashSet<String>();
+        for(var detail:BlacklistPresets.REDSTONE_DETAILS) {
+            if(!detail.id().equals("redstone.components"))assertEquals(1,detail.blocks().size(),detail.id());
+            for(String id:detail.blocks())assertTrue(parts.add(id),"Duplicate detailed protection: "+id);
+        }
+        assertEquals(BlacklistPresets.REDSTONE_ALL.blocks(),parts);
+        var p=new RuleProfile();p.blacklistPresets=new HashSet<>(Set.of("redstone.components"));
+        assertTrue(BlacklistPresets.excludes(p,"minecraft:redstone_wire"));
+        assertFalse(BlacklistPresets.excludes(p,"minecraft:observer"));
+        p.blacklistPresets.add("redstone.observer");
+        assertTrue(BlacklistPresets.excludes(p,"minecraft:observer"));
+    }
+
+    @Test void copperAndAmethystShareOneOptionalProtectionSwitch() {
+        var preset=BlacklistPresets.ALL.stream().filter(p -> p.id().equals(BlacklistPresets.COPPER_AMETHYST)).findFirst().orElseThrow();
+        assertEquals(14,preset.blocks().size());
+        assertTrue(preset.blocks().contains("minecraft:copper_bulb"));
+        assertTrue(preset.blocks().contains("minecraft:waxed_oxidized_copper_bulb"));
+        assertTrue(preset.blocks().contains("minecraft:amethyst_block"));
+        assertTrue(preset.blocks().contains("minecraft:amethyst_cluster"));
+        var p=new RuleProfile();p.blacklistPresets.remove(BlacklistPresets.COPPER_AMETHYST);
+        assertFalse(BlacklistPresets.excludes(p,"minecraft:amethyst_block"));
     }
 }

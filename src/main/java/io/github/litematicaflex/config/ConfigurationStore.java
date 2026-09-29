@@ -1,6 +1,7 @@
 package io.github.litematicaflex.config;
 
 import com.google.gson.*;
+import io.github.litematicaflex.rules.BlacklistPresets;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.LoggerFactory;
 import java.io.*;
@@ -32,7 +33,13 @@ public final class ConfigurationStore {
             if (document.has("showHud") && !document.has("hudPosition")) {
                 document.addProperty("hudPosition", document.get("showHud").getAsBoolean() ? "TOP_LEFT" : "OFF");
             }
+            int version=document.has("schemaVersion")?document.get("schemaVersion").getAsInt():-1;
             FlexConfiguration loaded = JSON.fromJson(document, FlexConfiguration.class);
+            if(version==1) {
+                addNewProtection(loaded.global);
+                if(loaded.savedProfiles!=null)loaded.savedProfiles.values().forEach(ConfigurationStore::addNewProtection);
+                loaded.schemaVersion=2;
+            }
             validate(loaded);
             editable = loaded;
             validFile = true;
@@ -45,6 +52,14 @@ public final class ConfigurationStore {
             LoggerFactory.getLogger("litematica-flex").error("Configuration rejected; original file preserved: {}", path, exception);
             return false;
         }
+    }
+
+    /** Upgrade once, then respect a player's later choice to turn this preset off. */
+    private static void addNewProtection(RuleProfile profile) {
+        if(profile==null || profile.blacklistPresets==null)throw new IllegalArgumentException("Invalid rule profile");
+        var presets=new java.util.LinkedHashSet<>(profile.blacklistPresets);
+        presets.add(BlacklistPresets.COPPER_AMETHYST);
+        profile.blacklistPresets=presets;
     }
 
     public void save() {
@@ -67,7 +82,7 @@ public final class ConfigurationStore {
     }
 
     private static void validate(FlexConfiguration config) {
-        if (config == null || config.schemaVersion != 1 || config.global == null
+        if (config == null || config.schemaVersion != 2 || config.global == null
                 || config.savedProfiles == null || config.hotkeys == null) throw new IllegalArgumentException("Unsupported configuration");
         try { HudPosition.valueOf(config.hudPosition); }
         catch (IllegalArgumentException | NullPointerException e) { throw new IllegalArgumentException("Invalid HUD position",e); }

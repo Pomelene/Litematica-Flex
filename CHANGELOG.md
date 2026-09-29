@@ -1,5 +1,11 @@
 # Litematica Flex Alpha ver. 变更记录 / Changelog
 
+## Alpha1.1.2
+
+- 黑名单新增默认开启的“铜灯与紫水晶”单项预设，覆盖八种铜灯、紫水晶块、紫水晶母岩及紫水晶芽／晶簇。<br>Add a default-on Copper bulbs and amethyst preset covering eight bulbs, amethyst blocks, budding amethyst, and buds or clusters.
+- 红石核心保留“全部保护”，并可展开十条细项：非完整方块元件一条，九种完整方块逐项保护；总项开启时细项灰显。<br>Keep Protect all for redstone components and add ten expandable choices: one non-full component group and nine individual full blocks. Details are disabled while Protect all is on.
+- 旧版 JSON 首次载入时增加新预设并迁移格式；此后玩家关闭该预设的选择保持有效。<br>Older JSON files gain the new preset on first load and migrate format; later choices to turn the preset off remain effective.
+
 ## Alpha1.1.1
 
 - 材料清单的替代模式改为在 Litematica 原界面内切换表格；可互换的原理图材料合并显示总数、待备数量和已备数量，并可搜索、排序、刷新库存及悬停查看组内材料。<br>The material-list substitution mode now switches the table inside Litematica's original screen. Interchangeable schematic materials share total, needed, and covered counts, with search, sorting, stock refresh, and member details on hover.

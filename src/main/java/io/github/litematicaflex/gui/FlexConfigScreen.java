@@ -28,11 +28,11 @@ public final class FlexConfigScreen extends GuiConfigsBase {
     private RuleProfile profile;
     private final List<IConfigBase> options=new ArrayList<>();
     private ConfigString profileNameOption;
-    private boolean advanced,pendingRebuild,pendingRefresh,resetScroll=true;
+    private boolean advanced,redstoneDetailsExpanded,pendingRebuild,pendingRefresh,resetScroll=true;
     private String category="木材",inputError;
 
     public FlexConfigScreen() {
-        super(10,96,"litematica_flex",null,"Litematica Flex Alpha ver. · Alpha1.1.1 · 26.3");
+        super(10,96,"litematica_flex",null,"Litematica Flex Alpha ver. · Alpha1.1.2 · 26.3");
         normalizeStoredGroups();profile=FlexRuntime.STORE.editable().global;buildOptions();
     }
     @Override public void initGui() {
@@ -64,6 +64,10 @@ public final class FlexConfigScreen extends GuiConfigsBase {
             button(14+2*actionWidth,73,actionWidth,advanced?"收起细分":"展开细分",() -> {flush();advanced=!advanced;rebuild();});
             button(16+3*actionWidth,73,actionWidth,"本类全开",() -> batchCategory(true));
             button(18+4*actionWidth,73,actionWidth,"本类全关",() -> batchCategory(false));
+        } else if(page.equals("黑名单")) {
+            button(10,73,155,redstoneDetailsExpanded?"收起红石细项":"展开红石细项",() -> {
+                flush();redstoneDetailsExpanded=!redstoneDetailsExpanded;resetScroll=true;rebuild();
+            });
         } else if(page.equals("自定义配置"))initFilePage();
         int bottom=getScreenHeight()-24;
         button(10,bottom,100,"应用并刷新",() -> {if(apply())rebuild();});
@@ -143,7 +147,7 @@ public final class FlexConfigScreen extends GuiConfigsBase {
     @Override protected void onSettingsChanged(){InputEventHandler.getKeybindManager().updateUsedKeys();}
     @Override public void removed(){super.removed();apply();}
     @Override public List<ConfigOptionWrapper> getConfigs(){return ConfigOptionWrapper.createFor(options);}
-    private int listY(){return page.equals("自定义配置")?getScreenHeight()+30:page.equals("预设方案")?120:74;}
+    private int listY(){return page.equals("自定义配置")?getScreenHeight()+30:page.equals("预设方案")?120:page.equals("黑名单")?98:74;}
     @Override protected int getBrowserWidth(){return Math.max(80,getScreenWidth()-20);}
     @Override protected int getBrowserHeight(){return page.equals("自定义配置")?0:Math.max(30,getScreenHeight()-getListY()-38);}
     @Override protected int getConfigWidth(){return Math.min(180,Math.max(65,getBrowserWidth()/3));}
@@ -285,12 +289,37 @@ public final class FlexConfigScreen extends GuiConfigsBase {
         bool("启用本范围黑名单",profile.blacklistEnabled,v -> {profile.blacklistEnabled=v;pendingRebuild=true;})
             .setComment(FlexText.tr("任一端命中就禁止替换与状态忽略；完全一致仍正常。全局黑名单始终优先，当前投影不能绕过。"));
         for(var preset:BlacklistPresets.ALL) {
-            bool("保护 / "+preset.title(),profile.blacklistPresets.contains(preset.id()),value -> {
-                var ids=new LinkedHashSet<>(profile.blacklistPresets);if(value)ids.add(preset.id());else ids.remove(preset.id());profile.blacklistPresets=ids;
-            }).setComment(FlexText.tr("受启用黑名单开关控制。包含：\n")+String.join(", ",new TreeSet<>(preset.blocks())));
+            if(preset.id().startsWith("redstone."))continue;
+            blacklistPreset(preset,"保护 / "+preset.title(),false);
+            if(preset==BlacklistPresets.REDSTONE_ALL && redstoneDetailsExpanded) {
+                for(var detail:BlacklistPresets.REDSTONE_DETAILS)
+                    blacklistPreset(detail,"  ↳ "+detail.title(),profile.blacklistPresets.contains("redstone"));
+            }
         }
         idList("自定义保护方块 ID",profile.blacklistBlocks,ids -> profile.blacklistBlocks=ids);
         if(!profile.strictBlocks.isEmpty())idList("旧配置严格排除（始终有效）",profile.strictBlocks,ids -> profile.strictBlocks=ids);
+    }
+    private void blacklistPreset(BlacklistPresets.Preset preset,String label,boolean coveredByAll) {
+        boolean selected=profile.blacklistPresets.contains(preset.id());
+        ConfigBoolean option;
+        if(coveredByAll) {
+            option=new FlexOptionList.LockedBoolean(label,selected,
+                "红石全部保护已开启，细项设置暂不参与判断；关闭全部保护后可分别选择。");
+            options.add(option);
+        } else option=bool(label,selected,value -> {
+            var ids=new LinkedHashSet<>(profile.blacklistPresets);
+            if(value)ids.add(preset.id());else ids.remove(preset.id());
+            profile.blacklistPresets=ids;
+            if(preset==BlacklistPresets.REDSTONE_ALL)pendingRebuild=true;
+        });
+        String explanation=FlexText.tr("受启用黑名单开关控制。包含：\n")+
+            String.join(", ",new TreeSet<>(preset.blocks()));
+        if(coveredByAll)explanation+="\n"+FlexText.tr("红石全部保护已开启，细项设置暂不参与判断；关闭全部保护后可分别选择。");
+        if(preset.id().startsWith("redstone."))explanation+="\n"+FlexText.tr("其他开启的预设也可能保护这里的方块。");
+        if(preset==BlacklistPresets.REDSTONE_ALL)explanation+="\n"+
+            FlexText.tr("全部保护开启时，细项灰显；关闭后按细项保护。")+"\n"+
+            FlexText.tr("容器等其它预设仍可能保护同一方块。");
+        option.setComment(explanation);
     }
     private void idList(String name,Set<String> values,Consumer<Set<String>> change) {
         var config=new ConfigStringList(name,com.google.common.collect.ImmutableList.copyOf(new TreeSet<>(values)),FlexText.tr("打开列表编辑器，每行填写一个方块注册名。例如 minecraft:obsidian；也可编辑同一个本地 JSON。"));

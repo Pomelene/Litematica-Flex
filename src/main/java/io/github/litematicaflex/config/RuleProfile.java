@@ -8,7 +8,7 @@ public final class RuleProfile {
     public boolean allReplacements = false;
     public boolean blacklistEnabled = true;
     public Set<String> blacklistBlocks = new LinkedHashSet<>();
-    public Set<String> blacklistPresets = new LinkedHashSet<>(List.of("redstone","moving","obsidian","containers"));
+    public Set<String> blacklistPresets = new LinkedHashSet<>(List.of("redstone","moving","obsidian","containers","copper_amethyst"));
     public boolean allowPlankLogReplacement = false;
     public boolean verification = true;
     public boolean rendering = true;

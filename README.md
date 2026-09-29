@@ -4,9 +4,9 @@ Litematica Flex 是 Litematica 的轻量附加模组，让相近方块的匹配�
 
 Litematica Flex is a lightweight Litematica addon that makes block matching more flexible. For example, Easy Place and schematic verification can treat different colors of concrete or stained glass as equivalent when the rules allow it.
 
-版本 **Alpha1.1.1**。这是 Minecraft 26.3 的 Fabric 客户端模组，依赖 Litematica 0.29.x、MaLiLib 0.30.x、Fabric Loader 0.19.5+ 和 Java 25。
+版本 **Alpha1.1.2**。这是 Minecraft 26.3 的 Fabric 客户端模组，依赖 Litematica 0.29.x、MaLiLib 0.30.x、Fabric Loader 0.19.5+ 和 Java 25。
 
-Version **Alpha1.1.1**. This is a Fabric client mod for Minecraft 26.3. It requires Litematica 0.29.x, MaLiLib 0.30.x, Fabric Loader 0.19.5+, and Java 25.
+Version **Alpha1.1.2**. This is a Fabric client mod for Minecraft 26.3. It requires Litematica 0.29.x, MaLiLib 0.30.x, Fabric Loader 0.19.5+, and Java 25.
 
 界面会跟随 Minecraft 当前语言自动显示简体中文或英文；预设组、提示、HUD 和快捷键名称都有对应翻译。切换游戏语言后重新打开 Flex 设置即可看到新语言，配置文件中的规则 ID 不变。
 
@@ -16,9 +16,9 @@ The interface follows Minecraft's selected language and supports Simplified Chin
 
 Strict review pauses substitutions only for the current game session. Restarting the game turns it off automatically so a temporary pause cannot silently carry over.
 
-安装 `build/libs/litematica-flex-26.3-Alpha1.1.1.jar`。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
+安装 `build/libs/litematica-flex-26.3-Alpha1.1.2.jar`。左 Alt + F 打开设置，左 Alt + R 临时严格复核。
 
-Install `build/libs/litematica-flex-26.3-Alpha1.1.1.jar`. Press Left Alt + F to open settings and Left Alt + R to toggle temporary strict review.
+Install `build/libs/litematica-flex-26.3-Alpha1.1.2.jar`. Press Left Alt + F to open settings and Left Alt + R to toggle temporary strict review.
 
 ## 设置与优先级 / Settings and priority
 
@@ -64,11 +64,16 @@ The HUD appears at the top left by default. If it overlaps Sodium, MiniHUD, or a
 
 If either block is on the blocklist, substitutions and ignored-state matching are disabled; an exact block-and-state match remains valid. The blocklist applies to rendering, verification, Easy Place, and material planning. These protections are enabled by default:
 
-- 红石核心：红石块、红石线、中继器、比较器、观察者、活塞、漏斗等。<br>Redstone components: redstone blocks and dust, repeaters, comparators, observers, pistons, hoppers, and others.
+- 红石核心：默认全部保护；可展开详细设置，将红石线、中继器、比较器、漏斗等非完整方块元件合为一项，其余完整方块逐项选择。全部保护开启时细项灰显；其它预设也可能保护同一方块。<br>Redstone components are protected as a whole by default. Expand the details to control non-full components such as wire, repeaters, comparators, and hoppers together, and each full block separately. Details are disabled while Protect all is on; other presets may also protect the same block.
 - 粘液块与蜂蜜块。<br>Slime blocks and honey blocks.
 - 黑曜石与哭泣黑曜石。<br>Obsidian and crying obsidian.
 - 容器与加工设备，包括所有潜影盒。<br>Containers and workstations, including all shulker boxes.
+- 铜灯与紫水晶：八种铜灯（四个氧化阶段及各自涂蜡版本），加上紫水晶块、紫水晶母岩和四种紫水晶芽／晶簇。<br>Copper bulbs and amethyst: eight bulbs across four oxidation stages with waxed variants, plus amethyst block, budding amethyst, and four bud or cluster blocks.
 
 可选冰/海绵/气泡柱材料及特殊功能方块预设。每个预设悬停可查看完整 ID；自定义列表每行一个注册名。GUI 验证注册名，配置文件允许未安装模组的合法 ID；这些 ID 在未注册时不会匹配。
 
 Optional presets protect ice, sponge, and bubble-column materials, as well as special functional blocks. Hover over a preset to see its full IDs; enter one registry ID per line in the custom list. The GUI validates IDs against registered blocks. The configuration file can contain valid IDs from mods that are not installed, but those IDs cannot match until registered.
+
+旧版配置首次载入时会加入“铜灯与紫水晶”保护并升级格式；此后手动关闭会保留，不会在重启后重新启用。文件本身会在下次正常保存时更新。
+
+Older configurations add Copper bulbs and amethyst protection on first load and migrate to the new format. A later choice to turn it off is preserved across restarts. The file is updated on the next normal save.
